@@ -1,0 +1,91 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} %para poder insertar el grafico de CC
+%\usepackage[latin1]{inputenc}
+\usepackage{natbib}
+
+
+
+\bibliographystyle{abbrvnat}
+\usepackage{mathrsfs} % Para obtener el simbolo de Lagrange.
+\usepackage{amsmath}
+
+\usepackage{float} %para que las figuras se inserten donde yo quiero
+%\usepackage{titlesec}
+\usepackage{color}
+
+% Separar en silabas
+\hyphenation{pro-pie-dad}
+
+% Definimos comandos
+\def \n {\nonumber}
+
+% inserta todos los epígrafes hasta el nivel \paragraph en la tabla de contenidos
+\setcounter{tocdepth}{3}
+% numera todos los epírafes hasta nivel \subparagraph en el cuerpo del documento
+%\setcounter{secnumdepth}{5} 
+
+
+%NUEVOS COMANDOS
+\newcommand{\bea}{\begin{eqnarray*}}  % begin eqnarray
+\newcommand{\eea}{\end{eqnarray*}}
+\newtheorem{defi}{Definición}[section] %http://www.cidse.itcr.ac.cr/revistamate/HERRAmInternet/Latex/wmlatexrevista/node25.html
+
+
+
+% define the title
+\author{Lic. Matias M. Grandi.}
+\title{\textbf{\huge{Notas de Clase}} 
+\vspace{0.5cm} \\ 
+\textbf{\Huge{Política Económica}}\\ 
+\vspace{1cm} 
+\large{VERSION PRELIMINAR}}
+%\date{2005}
+%\date
+
+\begin{document}
+
+% generates the title
+\maketitle
+\begin{center}
+%\textbf{\textsc{Licencia Creative Commons Argentina}}
+
+
+%\textsc{Atribución-No Comercial-Compartir Obras Derivadas Igual 2.5
+%http://creativecommons.org/licenses/by-nc-sa/2.5/ar/}
+\end{center}
+
+% insert the table of contents
+\newpage
+\tableofcontents
+\listoffigures
+
+% Externalidades
+\newpage
+\input{externalidades.tex}
+
+
+% Bienes Publicos
+\newpage
+\input{bienes_publicos.tex}
+
+
+% Public Choice
+\newpage
+\input{public_choice.tex}
+
+
+% Teoría de la Imposición Óptima
+\newpage
+\input{imposicion_optima.tex}
+
+% Bibliografia
+\newpage
+\input{bibliografia.tex}
+
+\nocite{*}
+
+
+
+\end{document}

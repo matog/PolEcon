@@ -1,0 +1,369 @@
+\section{Teoría de la Imposición Óptima}
+
+En todos los modelos que se van a desarrollar en esta sección, se utiliza como supuesto subyacente que el Gobierno prentende maximizar la carga excedente.
+
+Ejemplo:
+
+\begin{itemize}
+	\item 2 bienes, $x$ e $y$.
+	\item ocio, $l$.
+	\item Precio de los bienes y el ocio: $P_x$, $P_y$ y $w$.
+	\item $\overline{T}$: Dotación de tiempo.
+	\item $L=(\overline{T}-l) \Rightarrow \: wL=w(\overline{T}-l)$
+	\item $w(\overline{T}-l)=P_xX+P_yY \Rightarrow \: w\overline{T}=P_x+P_y+wl$
+\end{itemize}
+
+\emph{¡¡¡Insertar gráfico de carga excedente!!!!}	
+
+Si el gobierno desea gravar los tres bienes ($x$, $y$ y $l$) con una tasa uniforme $(1+t)$ \textit{Ad-Valorem}, obtenemos:
+
+\bea
+	w\overline{T} &=& (1+t)P_xX+(1+t)P_yY+(1+t)wL \\
+	\frac{w\overline{T}}{(1+t)} &=& P_xX+P_yY+wl
+\eea
+
+El impuesto Ad-Valorem para todos los bienes es igual que un impuesto de suma fija. Pero no es posible su aplicación, ya que no se puede poner un impuesto al ocio sin afectar la dotación. Por ejemplo, si suponemos una tasa de $(1+\theta)$ para gravar\footnote{Gravar al ocio es equivalente a subsidiar el trabajo} el ocio:
+
+\bea
+	w(\overline{T}-l) &=& P_xX+P_yY \\ 
+	w(1+\theta)(\overline{T}-l) &=& P_x(1+\theta)X+P_y(1+\theta)Y
+\eea
+
+La recaudación sería:
+
+\bea
+	R &=& P_xX\theta+P_yY\theta-wL\theta \\
+	R &=& \bigg[P_xX+P_yY-wL\bigg]=\theta.o \\
+	R &=& 0
+\eea
+
+Si se gravan todos los bienes y el trabajo, la recaudación del gobierno es nula. Se deben fijar tasas diferentes.
+
+Si se fijan alicotas diferenciadas entre todos los bienes:
+
+\bea
+	w(1+\theta_l)(\overline{T}-l) &=& P_x(1+\theta_x)X+P_y(1+\theta_y)Y \\
+	w(\overline{T}-l) &=& P_x \underbrace{\Bigg( \frac{1+\theta_x}{1+\theta_l} \Bigg)}_{1+t_x}X+ P_y \underbrace{\Bigg( \frac{1+\theta_y}{1+\theta_l} \Bigg)}_{(1+t_y)}Y \\
+	w(\overline{T}-l) &=& P_x(1+t_x)X+P_y(1+t_y)Y
+\eea
+
+\emph{Ventajas:} El Gobierno puede decidir que bien gravar.
+
+\emph{Desventajas:} Impuestos con alicuotas diferentes, distorsivos.
+
+El argumento comunmente usado \textit{"No se pueden establecer impuestos de suma fija es consecuencia de no poder gravar al ocio"} no es del todo cierto: los impuestos de suma fija (\textit{lump-sum tax}) no se pueden fijar debido a que existen dotaciones iniciales de algunos bienes (trabajo, por ejemplo)
+
+\subsection{Regla de Ramsey}
+
+Supuestos: 
+\begin{itemize}
+	\item individuo representativo (sólo se analiza la eficiencia y no la equidad)
+	\item Tecnología lineal
+	\item Precios de los bienes fijos
+	\item $n+1$ bienes: $x_0, x_1, \ldots, x_n \: (x_0$ ocio$)$
+	\item $L=1-x_o$
+	\item $\overline{T}=1$
+\end{itemize}
+
+\begin{itemize}
+	\item \emph{Problema del individuo }
+	
+		$$\max \: U(x_0,\ldots,x_n) \: s/a \: \sum_{i=1}^{n}q_ix_i=q_0(1-x_0)+I$$
+		
+		donde $q_0$ es el salario, $(1-x_0)=L$ (tiempo dedicado a trabajar) e $I$ representa el ingreso exógeno.
+		Reescribiendo la restricción:
+		
+		\bea
+			\sum_{i=1}^{n} q_ix_i & = & 1_0-1_0x_0 \\
+			\sum_{i=0}^{n}q_ix_i & = & q_o+I \\
+			\sum_{i=0}^{n}q_ix_i & = & M
+		\eea
+		
+		Por lo tanto, el problema se podria escribir cómo:
+		
+		$$\mathscr{L}=U(x_0, \ldots, x_n)+\alpha[M-\sum_{i=0}^{n}q_ix_i]$$
+		
+		\emph{Condiciones de Primer Orden:}
+		
+		\bea
+			\lambda_x_i: \frac{dU}{dx_i} & = & \alpha q_i \;i=0, \ldots, n. \quad \alpha= \mbox{ multiplicador de Lagrange} \\
+			x_i^{\*} & = & x_i(\underline{q}, M) \; \Rightarrow v(\underline{q},M)=V[x_0^{\*},\ldots, x_n^{\*}]
+		\eea
+		
+		Siendo $x_i^{\*}$ la demanda Marshalliana, $\underline{q}$ el vector de precios y $v$ la función de utilidad indirecta.
+
+	\item \emph{Problema del Gobierno}
+
+		El problema del gobierno consiste en minimizar la carga excedente sujeta a una recaudación dada.
+		
+		$$\max \: v(\underline{q},M) \: s/a \: \sum_{i=1}^{n}i_ix_i=\overline{R}$$
+		
+		Notar que la sumatoria comienza en el bien $1$, ya que no se grava el trabajo, definido como el bien $0$.
+		
+		$$q_i=1+t_i \Longrightarrow \parbox[t]{7cm}{Al realizar las derivadas con respecto al precio, se deriva, en realidad, con respecto a $t_i$ argumento de $q_i$}$$
+		
+		$$\mathscr{L}= v(\underline{q},M)+\Lambda\bigg[\sumt_i^{n} x_i-\overline{R}\bigg]$$
+		
+		\emph{Condiciones de Primer Orden:}
+	
+		\begin{eqnarray}	
+		\frac{d\mathscr(L)_i}{dt_j}=\frac{v}{q_j}+\lambda\bigg[\sum_{i=1}^{n}t_i \frac{dx_i}{dq_j}+x_j\bigg]=0 \quad j=1,\ldots,n \label{impuestos}
+		\end{eqnarray}
+		
+		Recordando la Identidad de Roy:
+		\begin{eqnarray}
+			\frac{dv}{dq_j} &=& -\frac{dv}{dM}x_j \nonumber \\
+			\frac{dv}{dq_j} &=& -\alpha x_j \label{roy}
+		\end{eqnarray}
+		
+		Reemplanzado \ref{roy} en \ref{impuestos}:
+		\begin{eqnarray}
+		-\alpha x_j+\lambda \bigg[\usm t_i \frac{dx_i}{dq_j}+x_j\bigg] &=&0 \nonumber \\
+		(\lambda-\alpha)x_j &=& -\lambda\sum t_i \frac{dx_i}{dq_j} \quad j=1,\ldots,n \label{slut1}
+		\end{eqnarray}
+		
+		Teniendo en cuanta la Ecuación de Slutzky:
+		
+		\begin{eqnarray}
+			\frac{dx_i}{dq_j} = \frac{dx_i^c}{dq_j}-x_j\frac{dx_i}{dM} \label{slut2}
+		\end{eqnarray}
+		
+		Sustituimos la Ecuación de Slutzky (\ref{slut2}) en \ref{slut1}:
+		
+		$$(\lambda-\alpha)x_j = -\lambda \sum_{t=1}^{n}t_i \bigg[\frac{dx_i^{c}}{dq_j}-x_j\frac{dx_i}{dM}\bigg]$$
+		
+		Por el Teorema de Young, las derivadas curzadas son iguales, por lo tanto:
+		
+		$$\frac{dx_i^{c}}{dq_j}=\frac{dx_j^{c}}{dq_i}$$
+		
+		Entonces:
+		
+		\begin{eqnarray}
+			\bigg(\frac{\alpha-\lambda}{\lambda}\bigg) x_j &=& \sum_{i=2}^{n} t_i \bigg[\frac{dx_j^{c}}{dq_i} - x_j \frac{dx_i}{dM} \bigg]x_j \nonumber\\
+			{{\sum_{i=1}^{n}t_i {{dx_{j}^{n} \over {dq_i}}} \over {x_j}} &=& \bigg[\frac{\alpha-\lambda}{\lambda}+\sum_{i=1}{n}t_i \frac{dx_i}{dM} \bigg] \quad i=1,\ldots,n \label{desaliento}
+		\end{eqnarray}
+
+\end{itemize}
+
+
+La ecuación \ref{desaliento} representa la \emph{Regla de Ramsey}. El lado izquierdo se denomina \emph{Índice de Desaliento}. El lado derecho es igual para todos los bienes, mientras que el izquierdo (Índice de Desaliento) mide el cambio proporcional en las demandas compensadas del bien $i$ cuando se introducen los diferentes impuestos $t_i$ con $i=i,\ldots, n$
+	
+Por lo tanto, la Regla de Ramsey sugiere que se aumentar las alícuotas de todos los bienes  hasta que las demandas compensadas varien todas en la misma cuantía. Las cargas excedentes, en el margen, deben ser todas iguales.
+	
+Otra forma de ver el significado del lado izquierdo de la ecuación \ref{desaliento}:
+\begin{eqnarray}
+	x_j^{c} &=& x_j^{c}(\underline{q};\overline{U}) \nonumber \\
+	dx_j^{c} &=& \sum_{i=1}^{n}\frac{dx_j^{c}}{dq_i}dq_i \quad q_i=1+t \nonumber \\
+	{dx_j^{c} \over x_j} &=& {\sum_{i=1}^{n} t_i \frac{dx_j^{c}}{dq_i} \over x_j} \label{desaliento2}
+\end{eqnarray}
+	
+El lado izquierdo de la ecuación \ref{desaliento} es el cambio proporcional en la demadna compensada, tal como lo demuestra la ecuación \ref{desaliento2}.
+Este pequeño esquema mide la distorción en términos de cantidades, dado que los precios pueden estar sujetos a diferentes normalizaciones.
+Resumiendo, el Indice de Desaliento debe ser, en el margen, igual para todos los bienes. Se puede expresar como:
+$${\sum_{i=1}^{n} t_i \frac{dx_j^{c}}{dq_i} \over x_j} &=& d_j \quad j=1,\ldots,n$$
+	
+Es importante destacar que no es totalmente correcto el pensamiento que indica que se deben gravar mas fuertemente aquellos bienes cuya demanda tiene poca sensibilidad al cambio en el precio, ya que se estarían obviando los efectos cruzados.
+
+Si este pensamiento prevaleciera, se estarían gravando mayormente los bienes de primera necesidad, por lo que las peresonas de menores ingresos serian aquellos que, proporcionalemnte pagarían mas impuestos.
+
+\subsubsection{Casos Especiales}
+\paragraph{Sin Efectos Cruzados}
+
+
+Si no existiesen efectos cruzados, pasando de un esquema de un modelo de equilibrio general a uno de equilibrio parcial:
+
+$$\frac{dx_i}{dq_j}=0 \quad \forall i \neq j$$
+
+Por lo tanto:
+
+\bea
+	(\lambda-\alpha)x_j &=&-\lambda \sum_{t=1}^{n} t_i \frac{dx_i}{dq_j} \quad j=1,\ldots,n\\
+	(\lambda-\alpha)x_j &=&-\lambda t_j \frac{dx_i}{dq_j} \\
+	t_j\frac{dx_i}{dq_j} &=& {\alpha-\lambda \over \lambda}x_j \\
+	t_j\frac{dx_i}{dq_j} \frac{q_j}{x_j}\frac{1}{q_j}&=&{\alpha-\lambda \over \lambda} \\
+	\epsilon_j &=&\frac{dx_i}{dq_j}\frac{q_j}{x_j}
+\eea
+
+Por lo tanto:
+
+\begin{eqnarray}
+	{-t_j \epsilon_j \over q_j} = {\lambda-\alpha \over \lambda}\frac{1}{\epsilon_j} \quad j=1,\ldots,n \label{elasticidadinversa}
+\end{eqnarray}
+
+La ecuación \ref{elasticidadinversa} representa la \emph{Regla de la Elasticidad Inversa}.
+Si no existen efectos cruzados, se debe gravar mas a los bienes mas inelásticos, ya que poca respuesta implica poca distorción en términos de cantidades.
+
+\paragraph{Con un impuesto de suma fija}
+\begin{itemize}
+	\item Problema del Individuo
+	\bea
+		\max \; U=U(x_0,\ldots,x_n) \; s/a \; \sum_{i=1}^{n}q_ix_i &=&q_0(1-x_o)+I-T \\
+		\sum_{i=0}^{n}q_ix_i &=& \underbrace{q_0+I}_{M}-T
+	\eea
+
+	Obtenemos la función de utilidad indirecta $v(\underline{q},M-T)$.
+
+	\item Problema del Gobierno
+
+	$$\max_{t_1,\ldots,t_n,T} \; v(\underline{q},M-T) \quad s/a \quad \sum_{i=1}^{n}t_ix_i+T=\overline{R}$$
+	$$\mathscr{L}=v(\underline{q}, M-T)+\lambda[\sum_{i=1}^{n}t_ix_i+T-\overline{R}]$$
+
+\end{itemize}
+
+\emph{Condiciones de primer orden}
+\begin{eqnarray}
+	t_j&:& -\alpha x_j+\lambda [\sum t_i \frac{dx_i}{dq_j}+x_j]=0 \quad j=1,\ldots,n. \label{cpo1}\\
+	T &:& -\frac{dU}{dM}+\lambda[-\sum_{i=1}{n}t_i \frac{dx_i}{dM}+1]=0 \label{cpo2}\\
+\end{eqnarray}
+
+Multiplicamos (\ref{cpo2}) por $x_j$:
+
+\begin{eqnarray}
+	-\alphax_j+\lambdax_j \bigg[-\sum_i=1}^{n}t_i\frac{dx_i}{dM}+1 \bigg]=0 \label{cpo3}
+\end{eqnarray}
+
+Restamos (\ref{cpo1}) menos (\ref{cpo3}):
+
+$$\bigg[ \sumt_i \frac{dx_i}{dq_j}+x_j\sum_{i=1}^{n}t_i\frac{dx_i}{dM} \bigg]=0$$
+
+Aplicando la Ecuación de Slutzky en $\frac{dx_i}{dq_j}$:
+
+$$	\sum_{i=1}^{n} t_i \frac{dx_i^{c}}{dq_j}-\sum_i=1}^{n} t_i x_j \frac{dx_i}{dM} + \sum_i=1}^{n} t_i x_j \frac{dx_i}{dM}=0 $$
+$$	\sum_{i=1}^{n} t_i \frac{dx_i^{c}}{dq_j}=0 \quad \quad \sum_{i=1}^{n} t_i \frac{dx_j^{c}}$$
+
+\emph{Conclusión:} Cuando el gobierno tiene acceso a los 2 tipos de bienes, lo óptimo es no distorsionar cantidades, sino que conviene reacudar todo por impuestos de suma fija.
+
+\paragraph{Una expresión alternativa para la regla de Ramsey}
+
+\bea
+	{-\sum t_i \frac{dx_i^{c}}{dq_i} \over x_j} &=& \bigg[ {-alpha+\lambda \over \lambda} - \sum t_i \frac{dx_i}{dM}\bigg] \quad j=1,\ldots, n\\
+	&=& 1-\frac{\alpha}{\lambda}-\sum_{i=1}^{n}t_i \frac{dx_i}{dM} \\
+	&=& \frac{1}{\lambda}\bigg[\lambda - \alpha - \lambda \sum_{i=1}^{n}t_i \frac{dx_i}{dM}\bigg]
+\eea
+
+Dado que $t_i$ está fijo, se puede reexpresar el cambio en la recaudación ante el cambio en el ingreso como:
+
+$$\sum_{i=1}^{n}t_i \frac{dx_i}{dM} = {d\sumt_i x_i \over dM}$$
+
+Por otro lado, podemos definiar $\gamma$ como:
+$$\gamma=\alpha+\lambda\sum t_i \frac{dx_i}{dM}$$
+
+Esta última ecuacion representa la utilidad social (o neta) del ingreso. La Utilidad Marginal Social varía, en forma directa, con los cambios producidos en la Utilidad Margina Privada ($\alpha$), y en forma indirecta ante el cambio en el ingreso ponderado por el precio sombra del gobierno.
+
+La Regla de Ramsey podría reescribirse como:
+
+$${\sum t_i \frac{dx_i^{c}}{dq_i} \over x_j}=\frac{1}{\lambda}[\lambda - \gamma] \quad \quad j=1,\ldots,n.$$
+
+definiendo:
+\begin{itemize}
+	\item $\lambda:$ Cambio en la valuación social si es posbile modificar marginalmente los impuestos.
+	\item $\gamma:$ Mide los cambios en la recaudación si pudiese gravar sin \emph{(o con???) }impuestos de suma fija
+	\item $[\lambda-\gamma]:$ Carga excedente del sistema impositivo.
+\end{itemize}
+
+\subsubsection{Ramsey con Consideraciones Distributivas}
+Supongamos que el gobierno analiza el efecto distributivo de los impuestos a través de una función de bienestar social.
+
+Supuestos:
+\begin{itemize}
+	\item Precios fijos.
+	\item $L$: ünico factor.
+	\item $H$ individuos: $v^h(\underline{q},M)$
+	\item $n$ bienes.
+	\item $x_i^h$: Demanda del bien $i$ por el individuo $j$.
+\end{itemize}
+
+El gobierno tiene que seleccionar un vector de impuestos que maximice el bienestar social.
+
+\begin{itemize}
+	\item Problema Del Gobierno
+	
+	$$\max \; W(v[1,\ldots,v^h) \quad s/a \quad \sum_{i=1}^{n}t_i \bigg(\sum_{h=1}^{H}x_{i}^h\bigg)=\overline{R}$$
+	
+	\begin{itemize}
+		\item $\overline{x}_i: \frac{1}{H} \sum_h^H x_i^h$
+		\item $\alpha^h$ = Utilidad Marginal del Ingreso para el individuo $h$.
+		\item $M^h$: Ingreso exógeno de $h$.
+	\end{itemize}
+	
+	$$\mathscr{L}=W(v[1,\ldots,v^h)+\lambda \bigg[\sum_{i=h}^{n}t_i (\sum_{h=1}^{n}x_i^h)-\overline{R} \bigg]$$
+	
+	\emph{Condiciones de Primer Orden}
+	\begin{eqnarray}	
+		\frac{d\mathscr{L}}{dt_j}& =& \sum_{h=1}^{H}\frac{dW}{dv^h}\frac{dv^h}{dq_T}\frac{q_j}{dt_j}+{}
+		\nonumber \\
+		& & \lambda\bigg[\sum_{i=1}^{n}t_I (\sum_{h=1}^{H}\frac{x_i^h}{dq_j})+\sum_{h=1}^{H} x_{j}^{h} \bigg]=0 \quad j=1,\ldots,n. \nonumber
+	\end{eqnarray}	
+	
+	Utilizando la Identidad de Roy: 
+	$$\frac{dv^h}{dq_j}=-\alpha^h x_j^h$$
+	
+	Considerando que la Utilidad Marginal del Ingreso Privado es $ \alpha^h=\frac{dv^h}{dM}$, obtenemos la valoracion de la sociaedad de un cambio en el ingreso del individuo $h$:
+
+	$$\frac{dW}{dv^h}\alpha h=\beta^h$$
+
+	Reemplazando en las Condiciones de Primer Orden:
+	$$\sum_{h=1}^H {\beta^hx_j^h \over \lambda}= \sum t_i \bigg(\sum_h \frac{dx_i^h}{dq_j}\bigg)+H\overline{x_j} \quad j=1,\ldots,n.$$
+	
+	Recordando la ecuación de Slutzky:
+	\begin{eqnarray}
+		\frac{dx_i^h}{dq_j} = \frac{dx^h}{dq_j}-x_j\frac{dx_i^h}{dM}= \delta_{ji}^h-x_j\frac{x_i^h}{dM^h} \label{slut3}
+	\end{eqnarray}
+	
+	Reempleazando en la condiciones de primer orden:
+	\bea
+		\sum_{h=1}^{H}{\beta^hx_j^h \over \lambda} &=& \sum_{i=1}^{n}t_i \sum_{h}\bigg[\delta_{ji}^{h}-x_j\frac{dx_j^h{}}{dM^h}\bigg]+H\overline{x_j} \\
+		&=& \sum_{i=1}^{n}t_i \sum_n \delta_{ji}^h- \underbrace{\sum_i t_i \sum_h \sum_h x_j \frac{dx_i^h}{dM^h}+H\overline{x_j}}_{\sum_h x_j^h \sum_i t_i \frac{dx_i^h}{dM^h}}
+	\eea
+	
+	Definimos \gamma (efecto del cambio del gasto en los consumidores) para cada consumidor:
+	
+	$$\gamma^h=\beta^h+\lambda \sum_{i=1}^{n}t_i \frac{dx_i}{h}}{dM^h}$$
+	
+	Sabiendo que:
+	\begin{itemize}
+		\item $\beta^h={dw \over dv^h}{dv^h \over dM}$ (cambio directo)
+		\item $\sum_{i=1}^{n}t_i \frac{dx_i^h}}{dM^h}=$ Cambios inderectos a través de cambios en la recaudación.
+	\end{itemize}
+	
+	\bea
+		\sum_i t_i \sum_h \delta_{ji}^h &=&-\sum_h \frac{\beta^h}{\lambda}x_j^h-\sumx_j^h \bigg( {\gamma^h-\beta^h \over \lambda}+H\overline{x_j} \\
+		\sum_i t_i \sum_h \delta_{ji}^{h} &=& - \sum x_j^h \frac{\gamma^h}{\lambda}+H\overline{x_j}
+	\eea
+	
+	Dividiendo por $H\overline{x_j}$ obtenemos la ecuación de Ramsey, con consideraciones distributivas, para diferentes individuos:
+	\begin{eqnarray}
+	-\sum t_i \bigg[\frac{1}{H}\sum\delta^h_{ij} \bigg] = \frac{1}{\lambda}\bigg[ \lambda -\frac{1}{H}\sum_h \frac{x_j^h}{x_j}\gamma^h \bigg] \quad j=1,\ldots,n. \label{ramseydist}
+	\end{eqnarray}
+	
+	El lado derecho de la ecuacion \ref{ramseydist} representa la caída en las cantidades consumidas.
+	
+	Si consideramos un agente representativo:
+	\begin{eqnarray}
+	{\sum t_i \delta_{ji} \over x_j} = \frac{1}{\lambda} [\lambda - \gamma] \quad j=1,\ldots,n. \label{ramseydistind}
+	\end{eqnarray}
+		
+	La principal diferencia entre (\ref{ramseydistind}) y (\ref{ramseydist}) es que en en (\ref{ramseydistind}) el lado derecho de la ecuación permanece constante, mientas que en (\ref{ramseydist}) cambia entre los diferentes bienes, permitiendo extraer señales.
+	
+	A continuación se presentan dos casos especiales donde se perciben las características distributivas:
+	\begin{itemize}
+		\item \emph{Caso I: }$\gamma^h=\gamma$
+		
+		\begin{itemize}
+			\item $\gamma^h & = & \beta^h+\lambda \sum t_i \frac{d x_i^{h}}{dM^h}$
+			\item $\beta^h &=& \forall h$
+			\item $\lambda \sum t_i \frac{dx_i^h}{dM^h}&=& \mbox{cte}.$
+		\end{itemize}
+
+		\bea
+			{-\sum t_i \bigg[\frac{1}{H} \sum_h \delta_ji^h \bigg] \over \overline{x}} &=& \frac{1}{\lambda}\bigg[\lambda - \gamma\frac{1}{H}\sum \frac{x_j^h}{\overline{x_j}}\bigg] \\
+			&=& \frac{1}{\lambda}[\lambda-\gamma]
+		\eea
+		
+		La conclusión es igual a la del agente representativo.
+		
+		\item 	\emph{Caso II: }${x_j^h \over \overline{x_j}$ igual para todo $j$
+		
+		El individuo $h$ no consume ningún bien en forma desproporcionada (las curvas de Engels son líneas rectas)
+	\end{itemize}	
+		

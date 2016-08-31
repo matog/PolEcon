@@ -1,0 +1,187 @@
+\section{Public Choice Theory}
+\subsection{Introducción}
+La denomica teoría de "Public Choice" es el estudio de las situaciones que requieren acciones colectivas, donde la el nivel de provisión de un bien o servicio necesita ser acordado colectivamente. Como ejemplo se pueden citar la provisión de los bienes publicos, tales como sistemas legales, policia, defensa, nivles de contamición, etc. La necesidad de una acción colectiva "stem" del problema del dilema del prisionero.
+ 
+\begin{table}[htbp]
+\caption{}
+\begin{tabular}{|l|l|r|l|}
+\hline
+ &  & \multicolumn{ 2}{c|}{Player \#1.} \\ \hline
+ &  & \multicolumn{1}{l|}{No-Cooperation } & Cooperation \\ \hline
+\multicolumn{ 1}{|c|}{Player \#2} & No-Cooperation & 5,5 & \multicolumn{1}{r|}{7,2} \\ \cline{ 2- 4}
+\multicolumn{ 1}{|l|}{} & Cooperation & 2,7 & \multicolumn{1}{r|}{6,6} \\ \hline
+\end{tabular}
+\label{}
+\end{table}
+
+ 
+Se observa claramente que la no cooperación es una estrategia dominante, por lo cual "no cooperación" es un equilibrio de estrategia dominante y el unico equilibrio de Nash. Existe una necesidad para que alguna forma de acción colectiva alcance la cooperación como estrategia. La forma en que usualmente las sociedades determinan si establecen o no una acción colectiva es someter una determinada propuesta a una votación, lo que obliga al estudio de la Teoría de la Votación (Voting Theory). Existen dos líneas principales dentro de este área: reglas de voto por unanimidad y reglas de mayoría.
+\subsection{Unanimity Rules}
+Las reglas de unanimidad requieren que cada uno de los votantes esté de acuerdo con la decisión. Para comprender estas reglas, el diagrama de Mueller (fuente) es simplificador:
+ 
+(DIAGRAMA)
+ 
+En el diagrama muestra las curvas de indiferencia de dos individuos $A$ y $B$ en el plano bien público-impuestos.
+El eje vertical representa la proporción del costo financiada por el individuo $A$, $100-A$ es la proporción financiada por el individuo $B$ y el eje horizontal muestra la cantidad provista del bien público. Comenzamos nuestro analisis suponiendo que $F$ es el \textit{ status quo }, que es claramente ineficiente dado que no está ubicado sobre la curva de contrato $CC'$ \footnote{La curva de contrato es aquella curva que atraviesa los puntos donde las curvas de indiferencia de ambos individuos son tangentes}.
+A continuación, consideramos un equilibrio por votación
+\subsubsection{Pairwise voting}
+Supongamos que el gobierno somete a votación la situación de status quo y propuestas alternativas. Supongamos que ofrece una cantidad de bien público $Q_1$ financiada por $A(x)$ y $B(1-x)$. Si esta combinación cae en el área formada por la intersección de las curvas $B_1$ y $A_1$, ambos consumidores preferiran comprar esta cantidad de bien público, y pagar lo dispuesto, a la alternativa de no contar con el bien público. $F$ se converte en el nuevo status quo y se somete a votación contra otra alternativa. El proceso continua hasta que el status quo se situa en un punto sobre la curva $CC'$, como el punto $G$. Ningún otra alternativa será unanimemente preferida.
+\subsubsection{Lindahl Voting}
+En una votación de Lindahl (Lindahl Voting) cada uno de los participantes se enfrenta a un \textit{tax share} personalizado. Cada individuo vota, por lo tanto, respecto a la cantidad de bien público que desea. Si todos votan por el mismo nivel de provisión del bien público, entonces es unanimidad (sólo ocurre si las curvas de indiferencia de ambos individuos son tangentes al mismo tax line para un nivel de bien público dado), sino, un nuevo set de impuestos es propuesto y se vota nuevamente. En el gráfico, existe un único equilibrio de Lindahl en $L$.
+Problems
+\begin{itemize}
+ \item La votación de a pares no lleva a un único equilibrio (outcome)
+ \item La votación de a pares y el mecanismo de Lindahl puede ser sujeto a manipulación estratégica.
+ \item If voting is costly there is a free rider problem, why bother to vote. This gets worse as the number of participants increases. Each individuals vote faces a smaller chance of being crucial and thus it takes less to discourage them from voting.
+\end{itemize}
+\subsection{Votación por mayoría (Majority Voting)}
+En el mundo real, una gran numero de procesos de votación son implementados a efectos de poder tomar decisiones, los cuales adopatan alguna forma de votación por mayoría. Comunmente las opciones se someten a una votación de a pares, elegiendose la ganadora por una mayoria simple. COmo se puede observar en el siguiente ejemplo, esto puede ocacioner problemas.
+\subsubsection{Single and Multiple Peakedness: Pairwise voting with a simple
+majority}
+Supongamos las siguientes preferencias:
+ 
+\begin{table}[htbp]
+\caption{}
+\begin{tabular}{|l|l|r|r|r|}
+\hline
+ &  & \multicolumn{ 3}{c|}{Opciones} \\ \hline
+ &  & \multicolumn{1}{l|}{A} & \multicolumn{1}{l|}{B} & \multicolumn{1}{l|}{C} \\ \hline
+\multicolumn{ 1}{|c|}{Player Rankings} & Fred(Brian) & 1 & 2 & 3 \\ \cline{ 2- 5}
+\multicolumn{ 1}{|l|}{} & Brian & 3 & 1 & 2 \\ \cline{ 2- 5}
+\multicolumn{ 1}{|l|}{} & Melissa(Brian) & 3 & 2 & 1 \\ \hline
+\end{tabular}
+\label{}
+\end{table}
+
+ 
+El resulado es claro: $B$ es preferido a $A$ y a $C$. En este caso, las preferencias son "single peaked".
+Ahora supongamos la siguiente situaición:
+ 
+\begin{table}[htbp]
+\caption{Alternativa}
+\begin{tabular}{|l|l|r|r|r|}
+\hline
+ &  & \multicolumn{ 3}{c|}{Opciones} \\ \hline
+ &  & \multicolumn{1}{l|}{A} & \multicolumn{1}{l|}{B} & \multicolumn{1}{l|}{C} \\ \hline
+\multicolumn{ }{|c|}{Player Rankings} & Fred(Brian) & 1 & 2 & 3 \\ \cline{ 2- 5}
+\multicolumn{ }{|l|}{} & Brian & 2 & 3 & 1 \\ \cline{ 2- 5}
+\multicolumn{ }{|l|}{} & Melissa(Brian) & 3 & 2 & 1 \\ \hline
+\end{tabular}
+\label{}
+\end{table}
+
+
+En este último caso, las preferencias no son "single peaked". $A$ es preferida a $B$, $C$ es preferida a $A$ y $B$ es preferida a $C$. Esto provoca:
+\begin{itemize}
+ \item Voting cycles - no clear result obtains
+ \item Agenda manipulation - the sequence of voting determines the outcome.
+\end{itemize}
+Conclusion - Deberíamos considerar otra forma de votación por mayoría. Una conclusión que se argumenta cuando se dan este tipo de situaciones es que los votantes no pueden expresar la intensidad de sus preferencias. El candidato que recibe muchos "Segundas Preferencias" pesa muy poco. El siguiente procedimiento soluciona este inconveniente.
+\subsubsection{Borda’s Rule}
+Cada uno de los candidatos suma puntos por la posición en el ranking de cada uno de los votantes. Si un candidato es rankeado último, recibe $0$ puntos, el penúltimo recibe $1$ y así sucesivamente.
+Supongamos una situación como la que presenta el cuadro a continuación:
+ 
+CUADRO
+ 
+El puntaje de Borda es el siguiente:
+ 
+$a$ obtiene $(7*2)+(1*2)=16$ \\
+$b$ obtiene $(7*2)+(6*1)+(1*1)=21$ \\
+$c$ obtiene $(7*1)+(7*1)+(6*2)=26$ \\
+ 
+Por lo tanto, de acuerdo a la Regla de Borda, $c$ triunfa. Notar que bajo la regla estandar de un voto, el resultado sería $b$=7, $a$=8, y $c$=6 y por o tanto, $a$ es el ganador.
+\paragraph{Problemas con la Regla de Borda - Independencia de Alternativas Irrelevantes (IAI)}
+Consideremos el siguiente ejemplo:
+CUADRO
+De acuerdo a la Regla de Borda: \\
+ 
+Brian gets $(30*2) + (1*2) + (29*1) + (10*1) = 101$ \\
+Ghandi gets $(30*2) + (29*2) + (10*2) + (1*1) = 139$ \\
+Reid gets $(1*1) + (101*) + (10*2) + (1*1) = 32$ \\
+ 
+Siguiendo la Regla de Borda, el orden correcto de los candidatos sería: Ghandi, Brian, Reid, pero si comparamos los resultados de a pares, obtenemos:
+ 
+Brian vs Ghandi - Brian gana $41-40$,\\
+Brian vs Reid - Brian gana $60-21$. 
+\subparagraph{Problema:} Brian le gana, mano a mano, al resto de los candidatos. El punto del problema se encuadra bajo la Independencia de Alternativas Irrelevantes, que establece que al hacer comparaciones entre dos opciones, sólo esas dos opciones son las que deben importar, y el resto debe ser tratado como irrelevante. En nuestro ejemplo, Reid se considera inferior a Brian y a Ghandi, entonces por qué la opción entre los últimos depende, de alguna u otra forma, de Reid? 
+\subparagraph{El problema es mayor de lo que parece ser.} No sólo la IAI provoca problemas para la Regla de Borda, sino que genera inconvenientes en cualquier otra regla de puntaje. Si una regla de puntaje requiere una secuencia de numeros reales tal que $s_q>s_2>...>s_n$, donde las alternativas de mayor ranking tienen mayores puntajes. Por lo tanto, podemos demostrar que la regla de puntuación siempre dará resultados pobres.
+Consideremos nuevamente nuestro ejemplo, pero establezcamos  $s_1=8$, $s_2=1$, $s_3=0$. De acuerdo a esta nueva regla de puntaje:\\ 
+ 
+Brian obtiene $(30*8)+(1*2)+(29*1)+(10*1)=281$ \\
+Ghandi obtiene $(30*8)+(29*8)+(10*8)+(1*1)=553$ \\
+Reid obtiene $(1*1)+(10*1)+(10*8)+(1*1)=92$ \\
+ 
+Nuevamente, Ghandi triunfa sobre Brian de acuerdo a la regla de puntaje, pero si tomamos los enfrentamientos mano a mano obtenemos el mismo resultado que antes:
+ 
+Brian vs Ghandi - Brian triunfa  $41-40$, \\
+Brian vs Reid - Brian triunfa $60-21$.\\
+ 
+\subparagraph{¿Por qué la IAI?}
+\begin{enumerate}
+ \item  If it is not present the outcome can be manipulated by introducing extraneous alternatives. In our example we see that Reid is a ”No Hoper” but under a scoring rule he can change the outcome by entering the contest.
+ \item From a practical point of view it allows decisions to be made over a restricted range of choices, we don’t have to consider every alternative. It is thus quick and cheap.
+\end{enumerate}
+ 
+ \subsubsection{Teorema de Imposibilidad de Arrow}
+ 
+ Desafortunadamente, Arrow\footnote{El artículo original, A Difficulty in the Concept of Social Welfare, fue publicado en The Journal of Political Economy, Vol. 58(4), pp. 328-346, en Agosto de 1950.} ha demostrado que cuando existen mas de dos alternativas disponibles, cualquier regla de decisión razonable puede violar la condición de AIA. 
+ 
+ Primero, definimos como una regla de decisión razonable explicitando algunas propiedades que se podría pensar que deberían tener. Supngamos que tenemos dos individuos, Andy y Ghandi, los cuales eligen entre tres opciones ($A$, $B$ y $C$). Se requiere que cualquier ranking de opciones $A$, $B$ y $C$ satisfaga los siguientes axiomas:
+ \begin{enumerate}
+ \item Completitud: $A \succ B$, $B \succ A$, o $A \mid B$.
+ \item Transitividad: Si $A \succ B$ y $B \succ C$ then $A \succ C$.
+ \item Si $A \succ B$ para Andy y Ghandi, entonces el ranking debe ubicar a $A$ por encima de $B$.
+ \item IIA: Si $A \succ B$ y $B \succ C$ entonces estas valoraciones no se alteran por la aparición de una nueva alternativa $D$.
+ \item El ranking debe ser derivado de las preferencias de los individuos.
+ \item No dictadura: No one individuals preferences may determine societies preferences.
+\end{enumerate}
+ 
+ Supongamos que los dos individuos tienen las siguientes preferencias:
+ 
+ Andy: $A \succ _a B \succ _a C$ \\
+ 
+ Ghandi: $C \succ _g A \succ _g B$ \\
+ 
+ Debemos demostrar que no se puede obtener un ranking de sociales de estas opciones, y que no violamos los axiomas de Arrow.
+\begin{itemize}
+ \item $B \succ _a C$ y $C \succ _g B$: debe ser el caso que socialmente $B \mid A$ o estariamos violando el axioma 6.
+ \item $A \succ _a B$ y $A \succ _g B$ debe ser el caso que, por el axioma 3, el ranking social de preferencias es $A \succ B$.
+ \item Aplicando el axioma 2, transitividad, obtenemos  $A \succ B \mid C \Rightarrow A \succ C$ pero viola el axioma 6.
+\end{itemize}
+ Conclusion: Debemos relajar un axioma.
+ 
+ \subsubsection{Condorcet Winners}
+ 
+ La idea detrás del enfoque de Condorcet es que existe un mejor resultado para cualquier votación y que los individuos, en promedio, conocen cual es ese mejor resultado.
+ Ejemplifiquemos con dos candidatos, George y Al. Cada uno promete construir una nueva ruta que cruce todo el país, y además, argumenta que lo puede realizar mas efecientemente que el otro. Por simplicidad supngamos que existen sólo dos votantes, los gemelos Brian, quienes pueden identificar correctamente al mejor candidato en el 60\% de las ocasiones. Observamos que los dos Brian votan por George, quien obtiene una mayoría simple ($50\%+1$ em este caso es 2, y tambien implica que, para triunfar, Al requiere el voto de los dos Brian). Nos preguntamos cual es la probabilidad de que lso Brian voten correctamente y el ganador correcto sea elegido por la regla de la mayoría. Para obtener una concluión, computamos, en primer lugar, las probabilidades condicionales.
+ \begin{enumerate}
+ \item La probabilidad que los dos Brian voten a George dado que Al es el mejor candidato.
+ $$P(\textnormal{Brian 1 y 2 votan a George})=(0.6)(0.6)=0.36$$
+ \item La probabilidad que los dos Brian voten a Al dado que George es el mejor candidato.
+ $$P(\textnormal{Brian 1 y 2 votan Al}) = (0.4) (0.4) = 0.16$$
+ 
+ 
+Por lo tanto, la elección de George es $\frac{0.36}{0.16}=2.25$ mas probable cuando George es la mejor opción. Esto se denomina \textit{likelihood ratio}. Además, se puede mostrar que con una población grande (muchos Brian) sólo se requiere que la probablildad que cada individuo tome la decisión correcta esté por encima del $50\%$
+Indeed it can be shown that with a large population (many Brians) it is only required that the probability that
+each individual makes the correct decision be slightly over $50\%$ for the odds of the correct individual winning to be come very large (approach 1 as the size of the population goes to infinity).
+\subparagraph{Three of More Alternatives.} Soponga que el objetivo es reducir la congestión del tránsito en Eugene. Las opciones son:
+\begin{enumerate}
+ \item Ofrecer mas colectivos.
+ \item Construir mas calles.
+ \item Hacer mas dificultoo obtener licencias de conducir, requiriendo un mayor entrenamiento.
+\end{enumerate}
+LA pregunta es cual de las alternativas es la mas efeciciente, por peso gastado. Los votos de la comunidad están dados por el siguiente gráfico:
+ 
+ (GRAFICO)
+ 
+ Cada uno de los vértices en el gráfico representa el número de votos. Por ejemplo, la flecha de $a \rightarrow b$ representa 33 votos de $a$ sobre $b$, mientras que $b$ tiene 27 votos sobre $a$. Para calcular el pairwise support, para el ranking $abc$, calculamos $a \rightarrow b$ más $b \rightarrow c$ más $a \rightarrow c$, o lo que es lo mismo, $33+42+25=100$.
+ Así
+ 
+ TABLA
+ 
+ Utilizando su método probabilístico, Condorcet mostró que el ranking que sería mas correcto es aquel que tiene el mayor pairwise support. En este caso, $bca$, que se denomina \textit{Condorcet’s rule of three}. Para comprobar si es verdadero, calculemos el \textit{relative likelihood}  
+ In this case
+(completar) To see that this is true let’s compute the relative likelihoods that each ranking is correct. Let p > 1/2
+be the probability the an individual voter chooses correctly.
+\end{enumerate}
+​

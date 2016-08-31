@@ -1,0 +1,793 @@
+
+\section{Bienes Públicos}
+
+Los bienes públicos son vistos como un caso particular de una externalidad 
+positiva. Sin embargo, los bienes públicos se prestan para análisis muy 
+interesantes en la teoría económica. 
+ 
+Como ya sabemos de las clases anteriores, cuando existen externalidades 
+positivas y se deja al mercado actuar,  el resultado será ineficiente: Muy poca 
+externalidad, i.e. muy poca oferta de bienes públicos. 
+ 
+\emph{Definición:} Un bien publico cumple con las siguientes
+condiciones:
+
+\begin{itemize}
+\item No Rival: No existe rivalidad en el consumo, es decir, el
+consumo de un individuo no depende del consumo de los otros. El
+$CMg$ de proveer el bien una vez producido a otro consumidor es
+cero. Ejemplo: Defensa Nacional, Faro.
+\item No excluyente: Es imposible (o extremadamente costoso) evitar
+que alguien usufructué del bien una vez producido. En particular, no
+es posible excluir a quienes no pagan el bien. Ejemplo: Canal de
+televisión, frecuencia de radio.
+\end{itemize}
+
+
+Un bien publico corresponde a un caso extremo de la externalidad
+(bien no excluyente que provee de una externalidad positiva a varios
+consumidores).
+
+Sin embargo, la mayoría de las veces es abstracto pensar en la existencia de 
+bienes públicos puros. 
+
+
+Usualmente, lo que encontramos es una mezcla de bienes: 
+
+
+\begin{tabular}{||l | c | r||}
+\hline
+\hline
+ & RIVAL & NO RIVAL \\
+\hline
+Excluible & Bienes Privados & Bienes Públicos\\
+\hline
+No Excluible & COMPLETAR & COMPLETAR\\
+\hline
+\end{tabular}
+ 
+\subsection{Provisión óptima de un bien público}
+
+\citet{samu} realizó esta caracterización, primero en forma
+analítica, y luego en forma gráfica.
+
+Supuestos:
+\begin{itemize}
+\item un solo bien publico
+\item \emph{``No free disposal"} (el individuo tiene que consumir todo el
+bien publico)
+\item $H$ consumidores, $h=1,2,\ldots H$ \\
+$$U^h=U^h(x^h,G)$$
+Donde $G$ es el bien publico puro, $x^h$ es un vector de $n$ bienes
+privados consumidos por el individuo $h$.
+\item $F(XG)\le 0$ (Situación sobre la FPP)
+\item $X= \sum_{h=1}^{H} x^h$
+\end{itemize}
+
+Una de las maneras de determinar la asignación eficiente es que la
+autoridad central maximice la utilidad de un individuo
+representativo, sujeto a un nivel de utilidad del resto de los
+individuos y a que la economía produzca sobre la $FPP$.
+
+% Para el sbolo de Lagrange, hay que usar el paquete \usepackage{mathrsfs}
+$$\mathscr{L}= U^1(x^1,G)+ \sum_{h=2}^{H} \mu [U^h(x^h;G)-U^h]-\lambda F(x;G)$$
+
+A fin de facilitar el álgebra, suponemos $\mu=1$
+CPO:
+
+\begin{eqnarray}
+G &:& \sum_{h=1}^{H} \mu^h \frac{\partial U^h}{\partial G}-\lambda \frac{\partial F}{\partial G}=0 \label{samu1} \\
+x_y^h &:& \mu^h \frac{\partial U^h}{\partial x_y^h}-\lambda\frac{\partial F}{\partial x_i}=0  \label{samu2}
+\end{eqnarray}
+
+De (\ref{samu2}) obtenemos:
+
+\begin{eqnarray}
+\boxed{
+	\mu^h=\lambda \frac{\frac{\partial F}{\partial{x_i}}}{\frac{\partial U^h}{\partial{xi_h}}} 	\label{samu3}}
+\end{eqnarray}
+
+
+Reemplazamos (\ref{samu3}) en (\ref{samu1}):
+
+\begin{eqnarray}
+	\sum_{h=1}^{H} \frac{\frac{\partial F}{\partial x_i}}{\frac{\partial U^h}{\partial x_i}}\frac{\partial U^h}{\partial G} &=& \frac{\partial F}{\partial G}  \n \\
+	\sum_{h=1}^{H} \frac{\frac{\partial F}{\partial x_i}}{\frac{\partial U^h}{\partial x_i}} &=& 
+\frac{\frac{\partial F}{\partial G}}{\frac{\partial U^h}{\partial x_i}} \n \\
+	\sum_{h=1}^{H} MRS_{G,i}^{h} &=& MRT_{G,i} \label{reglasamu}
+\end{eqnarray}  
+
+
+La ecuación (\ref{reglasamu}) es la denominada \emph{Regla de Samuelson} \marginpar{\emph{Regla de Samuelson}}, que indica que la autoridad central deberla proveer el bien publico hasta que $\sum TMS=TMT$.
+
+Para el caso de 2 bienes privados:
+
+\begin{eqnarray}
+ \frac{\frac{\partial U^h}{\partial x_j^h}}{{\frac{\partial U^h}{\partial x^h_i}}} &=& \frac{\frac{\partial F}{\partial x_j}}{\frac{\partial F}{\partial x_i}} \n \\
+ MRS_{j,i}^h &=& MRT_{j,i}	
+\end{eqnarray}
+
+La característica de \textit{no exclusión} de los bienes públicos no es necesaria para el cumplimiento de la \emph{Regla de Samuelson}, ya que está basada en los mecanismos de asignación de los bienes. 
+
+En cambio, si los es el atributo de \textit{no rivalidad}, que entra de manera directa en cada una de las funciones de utilidad: $U^g (x,G)$. La cantidad de bien público consumida es la totalidad del bien público producido $G$.
+
+Una de las limitaciones importantes que presenta la \emph{Regla de Samuelson}, y que limita su aplicabilidad, es que supone que los gobiernos tienen recursos ilimitados, debido a que indica \textit{"se debe proveer  e bien publico hasta..."}, sin tomar en cuenta su financiación, como si lo hacen los esquemas posteriores \emph{(agregar los nombres)}
+
+Es por esto que el paso siguiente es analizar varias alternativas, y comparar sus resultados con la \emph{Regla de Samuelson}, para medir cuán lejos se encuentra de la política óptima.
+
+\paragraph{La Regla de Samuelson: Análisis gráfico}
+
+\begin{itemize}
+	\item 2 individuos
+	\item 1 bien privado $x$
+	\item 1 bien público $G$
+	\item $U^A(x^A;G), \, U^B(x^B;G)$
+	\item $F(x^A+x^B;G)=0$
+\end{itemize}
+Analíticamente, lo que se intenta optimizar es la utilidad del individuo $B$, fijando, a un nivel \textit{ad-hoc}, la utilidad del individuo $A$.
+\begin{eqnarray}
+Max \; U^B(x^B;G) \qquad \textrm{sujeto a} && U^A(X^A;G)= U^A \n\\
+	&& F(x^A+x^B;G)=0  \n
+\end{eqnarray}
+
+\begin{center}
+\begin{figure}[H]
+\caption{Provisión óptima de un bien público}
+%\input{grafico4.tex} 
+\label{fig:grafico4}
+%\input{grafico5.tex} 
+\end{figure}
+\end{center}
+
+Ambos individuos van a consumir la misma cantidad del bien público $G$: Dado el consumo del individuo $A$, se obtiene la curva de posibilidades de consumo del individuo $B$.
+
+El punto máximo de la curva de posibilidades de consumo del individuo $B$ se encuentra donde las pendientes de $\overline{U}^A$  y $T$ se igualan.
+
+El procedimiento será el siguiente: a partir de la tangencia de $\phi$ y $U^B$ se determina $G^*$ y luego $x^A$ y $x^*$. Por último $x^{B*}$.
+
+Por construcción:
+
+\begin{eqnarray}
+	\phi &=& T - \overline{U}^A \\
+	\frac{\partial \phi}{\partial G} &=& \frac{\partial T}{\partial G} - \frac{\partial \overline{U}^A}{\partial G} \\
+	\mbox{pend} \, \phi &=& \mbox{pend}\, T-\mbox{pend} \, \overline{U}^A
+\end{eqnarray}
+
+Optimalidad requiere:
+
+$$\mbox{pend} \, \phi=\mbox{pend} \, \overline{U}^B$$
+
+Entonces:
+\begin{eqnarray}
+	\mbox{pend} \, T-\mbox{pend} \, \overline{U}^A &=& \mbox{pend} \,U^B* \n \\
+	\underbrace{-\mbox{pend} \, \overline{U}^A}_{MRS_A}-\underbrace{\mbox{pend} \,U^B*}_{MRS_B} &=& \underbrace{\mbox{pend} \, T}_{MRT} \n
+\end{eqnarray}
+
+En el punto $A$ se está cumpliendo la \emph{Regla de Samuelson} para la provisión óptima de un bien pblico\footnote{Recordar que para el caso de 2 bienes privados, $MRS_A=MRS_B=MRT$}.
+
+En el caso de un bien publico, \emph{no se puede hablar de un nivel óptimo de provisión único}, ya que para cada valor de $U^A$ vamos a encontrar un nivel óptimo de provisión
+
+Esto se cumple siempre y cuando no exista efecto ingreso. En caso de que exista, estaremos hablando de un nivel óptimo de provisión para cada nivel de distribución del ingreso.
+
+Algunos ejemplos:
+
+\begin{enumerate}
+	\item Con efecto ingreso.
+	$$\mathscr{L}	= G^{\beta i}x_i^{1-\beta i}+\lambda_i[M_i-P_i G-P_x x_i]$$
+	
+	De las CPO obtenemos las funciones inversas de demanda para ambos bienes:
+
+	$$P_i = \frac{\beta_i M_i}{G}$$
+	
+	Agregando (suma vertical de las funciones inversas de demanda) obtenemos la demanda del bien público. (recordar que el óptimo es $P=CMg$\footnote{El $CMg$ se normalizría 1})
+		
+	\begin{eqnarray}
+		\sum_{i=1}^{n} P_i= \sum_{i=1}^{n} \frac{\beta_i M_i}{G^*} &=& Cmg= 1 \n \\
+		G^* &=& \sum_{i=1}^{n} \beta_i M_i \n
+	\end{eqnarray}
+	
+	La provisión óptima depende de $\beta_i$ (preferencias), y a no ser que los $\beta_i$ sean iguales para todos los individuos, la provisión óptima del bien publico depende de como se distribuyan los ingresos entre los consumidores.
+	
+	\item Sin efecto ingreso.
+	$$\mathscr{L}	= \beta_i \ln{G}+x_i\lambda_i[M_i-P_i G-P_x x_i]$$
+
+	De las CPO obtenemos:
+	$$P_i=\frac{\beta_i}{G}$$
+	
+	Agregando las demandas:
+	\begin{eqnarray}
+		\sum_{i=1}^{n}P_i=\sum_{i=1}^{n} \frac{\beta_i}{G^*} = 1 \n \\
+		G^*=\sum_{i=1}^{n} \beta_ i \n
+	\end{eqnarray}
+	
+	El nivel óptimo de provisión del bien publico es nico para cualquier distribución del ingreso, solo depende los $\beta_i$.
+	Cuando se realiza un análisis de equilibrio parcial, generalmente se supone implicitamente que no existe efecto ingreso.
+\end{enumerate}
+
+\subsection{Provisión voluntaria de bienes publico}
+
+Es la solución mas sencilla. Si arrojaría resultados óptimos, no habría inconvenientes con la provisión pública de un bien público.
+
+Ejemplo: Un individuo decide construir un dique con bolsas de arena. Cada miembro de la comunidad tiene que colaborar con bolsas de arena. La provisión del bien seria igual a la suma de bolsas de arena recolectadas. A mayor cantidad de bolsas de arena, la comunidad se beneficia ya que mas fuerte es el dique.
+
+\begin{itemize}
+	\item $G^h$=Contribuciones individuales del bien publico.
+	\item $U^h(x^h;G)$
+	\item $w^h=P_x x^h+P_ G G^h$, con $P_G$ exógeno (precio de las bolsas de arena).
+\end{itemize}
+
+Cada individuo maximiza su utilidad tomando como dadas las decisiones del resto de la comunidad. Dados estos supuesto \emph{a la Nash}, se va a obtener un \emph{equilibrio Cournot-Nash}
+
+	$$\mathscr{L}=U^h(x^h;G)+\lambda^h[w^h - P_x x^h-P_G G^h]$$
+	
+con $G^h = G - \sum_{j \neq h} G^j$ \\
+
+
+CPO:
+	
+\begin{eqnarray}
+	\frac{\partial \mathscr{L}}{\partial G} &:& \frac{\partial U^h}{\partial G} - \lambda^h P_G = 0 \n \\
+	\frac{\partial \mathscr{L}}{\partial x^h} &:& \frac{\partial U^h}{\partial x^h} - \lambda^h P_x = 0 \n \label{eq:rdosalmuelson}
+\end{eqnarray}
+
+Reordenando términos: 
+
+\begin{eqnarray}
+	\frac{\frac{\partial U^h}{\partial G}}{\frac{\partial U^h}{\partial x^h}} = \frac{P_G}{P_x} \qquad h=1, \ldots, H
+\end{eqnarray}
+
+Esta optimización es llevada a cabo por cada integrante de esta economía.
+
+\paragraph{Comparación Cournot-Nash- Samuelson}
+
+
+De (\ref{eq:rdosalmuelson}) podemos obtener la condición de eficiencia de cada uno de los consumidores, la cual indica la cantidad de bien público y bien privado que desean consumir:
+
+$$ MRS^h_{G,x}=MRT_{G,x} $$
+
+Por otro lado, la \emph{Regla de Samuelson} marca que: 
+
+\begin{eqnarray}
+	\sum_{h=1}^{H} \frac{\frac{\partial U^h}{\partial G}}{\frac{\partial U^h}{\partial x^h}} &=& \frac{P_G}{P_x} \n \\
+	\frac{\frac{\partial U^h}{\partial G}}{\frac{\partial U^h}{\partial x^h}} &=& \frac{P_G}{P_x} - \underbrace {\sum_{j \not= h}^{H} \frac{\frac{\partial U^j}{\partial G}}{\frac{\partial U^j}{\partial x^j}}}_{>0} \qquad \textrm{Regla de Samuelson para un Individuo} \n
+\end{eqnarray}
+
+La solución óptima de Samuelson implica una $TMS$ menor que la del \emph{Equilibrio de Nash}.  Por lo tanto, \emph{la Regla de Samuelson implica un consumo mayor que en el Equilibrio de Cournot Nash.} La provisión voluntaría no soluciona el problema de la provisión del bien público. No provee las cantidad eficientes indicadas por la condición de Samuelson.
+
+\paragraph{Diferencias en la provisión del bien público}
+
+\begin{itemize}
+	\item Caso Cobb-Douglas
+	
+	$$U^h=x_h^\alpha G^\beta \qquad 0<\alpha<1 \qquad 0<\beta<1 $$
+	
+	
+\begin{eqnarray}
+	{\beta x_h^\alpha G^{\beta-1} \over \alpha x_h^{\alpha-1}G^{\beta}} &=& {P_G \over P_x} \n \\
+	G &=& {P_x \over P_G}{\beta \over \alpha} x^h \n 
+\end{eqnarray}
+	
+	Recordando que $G=\sum_{h} G^h$ y que $w^h=x^h P_x+G P_G$:
+	
+	
+\begin{eqnarray}
+	\sum_{h} G^h &=& {P_x \over P_G}{\beta \over \alpha} \left[ \frac{w^h}{P_x}-\frac{P_G}{P_x}G^h \right] \n \\
+	G^h \left(1+ {\beta \over \alpha} \right)&=& -\sum_{j \not= h} G^j+{\beta \over \alpha}{w^h \over P_G} \n \\
+	G^h &=& -{\alpha \over \alpha + \beta} \sum_{j \not= h} G^j + {\beta \over \alpha + \beta}{w^h \over P_G}
+\end{eqnarray}
+	
+	La contribución del individuo $h$ será menor cuanto mayor piense que será el aporte del resto de los individuos.
+	
+	En el caso de 2 individuos (individuos idénticos) \emph{VER BIEN}: 
+	
+\begin{itemize}
+	\item Todos los individuos tienen el mismo ingreso $w^h=w$ para todo $h$. Todos eligen el mismo nivel de gasto pblico $G^h$
+\end{itemize}
+
+\begin{eqnarray}
+	G^h &=& -{\alpha \over \alpha + \beta} (H-1) G^h + {\beta \over \alpha + \beta}{w \over P_G} \n \\
+	G^h &=& {\beta \over \alpha H + \beta} {w \over P_G} \label{eq:cn}
+\end{eqnarray}
+	
+(\ref{eq:cn}) representa la cantidad de bien pblico de equilibrio, para un individuo, del problema de Cournot-Nash.
+
+Generalizando, para los $H$ individuos:
+
+$$G_{cn}=	H{\beta \over \alpha H + \beta} {w \over P_G} $$
+
+Si comparamos con la solución de Samuelson, con todos los individuos con el mismo ingreso y  las misma función de utilidad Cobb-Douglas:
+
+Partimos de:
+
+\begin{eqnarray}
+	{\beta x_h^\alpha G^{\beta-1} \over \alpha x_h^{\alpha-1}G^{\beta}} &=& {P_G \over P_x} \n \\
+	G &=& {P_x \over P_G}{\beta \over \alpha} x^h \n 
+\end{eqnarray}
+
+Reemplazando $x_h$ de la restricción:
+
+$$G^h = {\beta \over {\alpha+\beta}} {w \over P_G}$$
+
+Agregando para los $H$ consumidores:
+
+$$G_{op}=HG^h= H{\beta \over {\alpha+\beta}} {w \over P_G}$$
+
+Entonces:
+\begin{eqnarray}
+	{G_{cn}\over G_{op}} &=& {{H{\beta \over \alpha H + \beta} {w \over P_G}} \over {H{\beta \over {\alpha+\beta}} {w \over P_G}}	\n 	\\
+	{G_{cn} \over G_{op}} &=& {\alpha + \beta \over {\alpha H + \beta}} \label{eq:cousam}
+\end{eqnarray}
+
+\begin{itemize}
+	\item Si $H=1$, ${G_{cn}\over G_{op}}=1$
+	\item Si $H\rightarrow \infty$, ${G_{cn}\over G_{op}} \rightarrow 0$
+\end{itemize}
+
+\emph{Conclusión:} 
+\begin{itemize}
+	\item Cuanto mas grande sea la comunidad, mayor sería la subprovisión del bien publico en el caso de provisión voluntaria.
+	\item Para el caso de la función Cobb-Douglas, se puede probar que a mayor ${\beta \over \alpha}$, menor sería la subprovisión del bien pblico.
+	\item Se pueden encontrar contraejemplos donde esto no se cumple. Pero si las preferencias son de buen comportamiento, generalmente se llega al resultado arriba presentado\footnote{Si $\alpha=1$, ${G_{cn}\over G_{op}}=1$. El consumidor sólo tiene preferencias por consumir el bien público}.
+\end{itemize}
+
+\end{itemize}
+
+Por lo tanto, el mecanismo de provisión voluntaria es ineficiente, por lo que se deben buscar nuevas alternativas.
+
+\subsection{Soluciones al problema de subprovisión}
+
+El modelo con el que vamos a trabajar es el siguiente:
+
+\begin{itemize}
+	\item $n$ consumidores
+	\item 2 bienes, $y_i$ (privado) y $x$ (bien pblico)
+	\item Sector Productivo: puede transformar una unidad de bien privado en una unidad de bien pblico.
+	\item Preferencias cuasilineales/separables: $u_i=v_i(x)+y_i$ \\
+	Propiedades de $v_i(x)$:
+		\begin{enumerate}
+			\item Continua
+			\item Diferenciable
+			\item Cóncava.
+			\item $v_i '=$Utilidad Marginal del Bien Publico.
+		\end{enumerate}
+	\item Dotación: $w_i=$ Dotación del bien privado con la que comienza el individuo.
+	\item Factibilidad: $(x;y_1; \dots ; y_n)$ sería factible si $x+\sum_{i=1}^{n}y_i=\sum_{ i=1}^{n}w_i$
+\end{itemize}
+
+La condición de eficiencia o Regla de Samuelson, en este caso sería:
+
+$$\sum_{i=1}^{n}v_i ' (x)=\underbrace{1}_{TMT}$$
+
+Una forma alternativa para analizar la eficiencia sería maximizar el Beneficio Agregado Neto (BAN):
+
+$$v_1(x)+v_2(x)++ \ldots v_n(x)-x = \underbrace{\sum_{i=1}^{n} v_i(x)-x}_{BAN}$$
+
+\subsubsection{Financiamiento Privado}
+
+El individuo $i$ se adelanta al resto, y quiere comprar el bien pblico.
+
+$$ Max \quad u_i=v_i(x)+y_i \qquad s/a \quad x+y_i=w_i$$
+
+CPO:
+
+$$v_i ' (x)=1 \qquad \Rightarrow \widehat{x_i}$$
+
+\begin{figure}
+	\centering
+	\caption{Equilibrio}
+	%\input{grafico6.tex}
+\end{figure}
+
+El resto de los consumidores actua como \emph{free rider}.
+\begin{itemize}
+	\item Si $v_j ' (\widehat{x_i})<1 \Rightarrow j$ acta como \emph{free rider}.
+	\item Si $v_j ' (\widehat{x_i})>1 \Rightarrow j$ se beneficia por comprar unidades adicionales del bien pblico hasta que $v_j ' (x_i)=1$
+\end{itemize}
+
+En equilibrio:
+
+\begin{itemize}
+	\item $v_j ' (x_i)=1$ para algn $i$ (al menos, para el que comprar en primer lugar el bien pblico).
+	\item $v_j ' (x_i) \leq 1$ para todo $i$.
+\end{itemize}
+
+El financiamiento, en equilibrio, va a depender de la secuencia de compras en cada caso. 
+
+Si $v_i ' (x)=1$ y si $v_i ' (x)>0$ para el resto, entonces $v_1 ' (x)+v_2 ' (x)+ \ldots + v_n ' (x)>1 \Rightarrow$ No se cumple la Regla de Samuelson (se estaría produciendo demasiado poco del bien pblico).
+
+Supongamos que $v_i ' (x)$ es igual para todo $i$. Si el individuo $1$ toma la delantera y compra $\widehat{x_1}$ del bien pblico, al ser todos los consumidores iguales $v_i ' (\widehat{x_i})=1$ para todo $i$.
+
+$$\sum_{i=1}^{n}v_i ' (\widehat{x_i})=1+1+\ldots +1=n >>1$$
+
+La cantidad diferiría de la de samuelson.
+
+El problema que surge de la provisión privada del bien pblico es el de \emph{free-riding}. Se debe estudiar algn otro mecanismo de provisión.
+
+\subsubsection{Esquema de Wicksell-Lindahl}
+
+El gobierno centrar va a ser el encargado de proveer el bien pblico, que va a ser financiado con impuesto. Se deben cumplir dos condiciones:
+\begin{itemize}
+	\item Cumplir con la eficiencia paretiana
+	\item Cumplir con el Principio del Beneficio: Cargar impositivamente a cada individuo con lo que recibe del bien pblico.
+\end{itemize}
+
+Supuesto:
+
+\begin{itemize}
+	\item $y_i$= Bien público.
+	\item $T_i=$ Impuesto pagado por el individuo $i$
+	\item $P_x=P_y=1$
+	\item Restricción Presupuestaria: $y_i+T_i=w_i$
+	\item El Gobierno elige los $t_i$ (tasa impositiva para cada individuo) tal que $\sum_{i=1}^{n}t_i=1$
+	
+	$T_i=t_ix$
+\end{itemize}
+
+Si $t_i= {1 \over 4}$ el individuo $i$ maximiza sujeto a la parte del bien pblico que debe financiar.
+
+$$ u_i=v_i(x)- \underbrace{\frac{1}{4}+w_i}_{y_i=w_i-T_i}$$
+
+CPO:
+
+$$v'(x)=\frac{1}{4}$$
+
+
+\emph{INSERTAR GRAFICO}
+\begin{itemize}
+	\item Cumple con el Principio del Beneficio?
+
+\begin{itemize}
+	\item $v'_i(x)=t_i \Rightarrow \hat{x}_i (t_i)$  Función de demanda del bien pblico.
+	\item A mayor $t_i$, menor $x$. Cumple con la relación de demanda.
+\end{itemize}
+
+Si el Estado provee la cantidad del bien pblico que \textit{desea} el individuo $i$ (de las CPO), se estaría cumpliendo el principio del beneficio, ya que lo que recibe es proporcional a lo que financia:
+$$x=\hat{x}_i(t_i)$$
+
+Pero no se cumple el Principio del Beneficio para todos los agentes de la economia al mismo tiempo, ya que cada agente $i$ desea una cantidad diferente(generalmente)
+
+El mecanismo consiste en ajustar las alicuotas $t_i$ hasta que todos los individuos deseen la misma cantidad del bien pblico.
+
+\begin{itemize}
+	\item Ejemplo
+	$$n=2 \qquad t_1=\frac{1}{2} \qquad t_2=\frac{1}{2}$$
+	$$\hat{x}_1(\frac{1}{2})=10 \qquad \hat{x}_2 (\frac{1}{2})=20$$
+	
+	Al menos uno de los dos no va a estar cumpmliendo el Principio del Beneficio.
+	
+	Ajuste: Aumentar $t_2$ y bajar $t_1$, que provocaría un aumento en $\hat{x}_1$ y una caida en $\hat{x}_2$.
+\end{itemize}
+
+\emph{Equilibrio de Lindahl:}Es un vector $(t_1, t_2, \ldots, t_n)$ tal que $\sum_{t=1}^{n}t_i=1$, y en un nivel $\hat{x}$ del bien público tal que, para todo $i$, $\hat{x}$ maximiza $u_i=v_i(x_i)+y_i$ sujeto a $y_i+t_i x=w_i$
+
+\item ¿Es Pareto Eficiente?
+
+Sabemos que si estamos en un equilibrio de Lindahl: 
+$$\hat{x}=\hat{x}_i (t_i) \:\forall i$$
+\end{itemize}
+
+\subsection{Mecanismo de Groves Ledyard}
+En este mecanismo, los consumidores envian un mensaje al Gobierno, pero no de sus preferencias estrictas.
+Con el mensaje, el Gobierno detemrina la cantidad de bien público $x$ proveer, y de la alicuota (o impuesto total????) a cobrar para financiarlo. Como resultado se obtiene un esquema eficiente (en el sentido de Samuelson) pero surgen otros inconvenientes.
+
+\paragraph{Timming del Modelo}
+\begin{itemize}
+	\item \emph{Mensaje:} Señal del incremento deseado del bien público. Cada individuo $i$ envía un $\Delta_i$
+	
+	Suponemos que por medio de un proceso iterativo de ajustes de los $\Delta_i$ se logra un equilibrio. Esto da lugar a una inconsistencia temporal, pero reducimos el analisis a un esquema estático, donde exista 1 equilibrio.
+	
+	\item \emph{Gobierno:} 
+
+	\begin{itemize}
+		\item Fija un nivel de bien público $x$ de acuerdo a:
+		$$\hat{x}=\sum_i=1^{n} \delta_i$$
+		\item Fija impuestos de acuerdo a:
+		$$T_i= \frac{\hat{x}}{n}+\underbrace{\frac{\gamma}{2}+ \bigg[ \frac{n-1}{n}\left(\Delta_i-A_i\right)-\sum_{j \neq i}\frac{1}{n-2}\Delta_j-A_i)^2 \bigg] }_{\mbox{Coef. de ajuste, evita déficits y superavits.}}$$
+
+		$$A_i=\frac{1}{n-1}\sum_{j \neq i}\Delta_i=\frac{1}{n-1}\left(\hat{x}-\Delta_i\right)$$
+
+		$$\gamma > 0$$
+	\end{itemize}
+
+	\item \emph{Consumidor:}
+
+	Maximiza la utilidad después de impuestos:
+	$$V_i(\hat{x})-T_i$$
+
+	Debido a que el consumidor $i$ toma como dados $\Delta_j \: \forall \:j \neq i$, se alcanza un equilibrio de Nash-Cournot, donde la decisión de $i$ no afecta a $j$.
+
+	$$\max_{\Delta_i} V_i \bigg(\Delta_i+\sum_{j \neq i} \Delta_j \bigg)-T_i $$
+
+	$$\max_{\Delta_i} V_i\bigg(\Delta_i+\sum_{j \neq i}\Delta_j \bigg)-\frac{1}{n}\bigg(\Delta_i+\sum_{j \neq i}\Delta_j \bigg)-\frac{\gamma}{2}+\Bigg[\frac{n-1}{n}\bigg(\Delta_i-A_i\bigg)-\sum_{j \neq i}\frac{1}{n-2}\Delta_j-A_i)^2 \Bigg]  $$
+
+	\emph{Condiciones de Primer Orden:}
+	
+	$$V_i ' \bigg(\Delta_i+\sum_{j\neq i}\Delta_j \bigg) - \frac{1}{n} - \gamma \bigg( \frac{n-1}{n}( \Delta_i-A_i ) \bigg)=0$$
+	
+	\begin{defi}[Equilibrio de Groves Ledyard]
+	Es una lista de incrementos $(\Delta_1, \Delta_2,\ldots,\Delta_n)$ y un nivel de provisión de bien público $\hat{x}=\sum_{i=1}^{n}\Delta_i$ tal que $\forall_i$, $\Delta_i$ maximiza $V_i(\hat{x}-T_i$), dados $\Delta_1, \Delta_2, \ldots,\Delta_{î-1}, \Delta_{i+1},\ldots, \Delta_{n-1}, \Delta{n}$.
+	\end{defi}
+\end{itemize}
+
+\paragraph{Propiedades del equilibrio}
+\begin{enumerate}
+	\item $\hat{x}$ satisface la regla de Samuelson.
+	Sumando las condiciones de primer orden para todos los individuos:
+	\bea
+		\sum V_i ' \bigg( \Delta_i + \sum_{j \neq i} \Delta_j \bigg) &=& \sum_{i=1}^{n} \bigg[ \frac{1}{n} + \frac{\gamma(n-1)}{n}(\delta_i - A_i) \bigg] \\
+		\sum_{i=1}^{n}V_i ' (\hat{x}) &=& 1 + \frac{\gamma(n-1)}{n} \sum_{i=1}^{n}(\delta_i - A_i) \\
+		& = & 1+ \sum \Delta_i - \sum A_i \\
+		& = & 1+ \hat{x} - \sum \bigg[ \frac{1}{n-1}(\hat{x}-\Delta_i) \bigg] \\
+		& = & 1+ \hat{x} - \frac{1}{n-1}[ (\hat{x}n-\hat{x} \\
+		& = & 1+ \hat{x} - \bigg( \frac{n-1}{n-1} \bigg) \hat{x} \\
+		\sum _{i=1}^{n} V_i ' (\hat{x}) & = & 1 \\
+		\sum TMS & = & TMT \:\mbox{Se cumple la Condición de Samuelson}
+	\eea
+	
+	\item El esquema no genera excedente:
+	$$\sum T_i = \mbox{ Costo de Producción del bien público}$$
+
+Sustituiomos $A_i = \frac{\hat{x}-\Delta_i}{n-1}$ en $T_i$ (numerar la formula anterior y reemplazar)
+
+Operando algebraicamente:
+
+
+
+
+\subsection{Votación por Mayoría}
+
+Vamos a examinar un método de aplicación real y concreta para financiar el bien público. Suponemos que el gobierno carga $t_{1}, \ldots, t_{n}$ sobre cada individuo y que los $t_{i}$ están fijos y son independietes de las preferencias de los individuos por el bien público.
+
+Las participaciones podrían ser:
+
+\begin{itemize}
+ \item Todos los individuos pagan los mismo: $t_{i}=\frac{1}{n} \mbox{ para todo } i$
+ \item Los individuos pagan en función de su riqueza: $t_{i}=\frac{w_{i}}{\sum_{i=1}^{n}w_{i}} \mbox{ para todo } i$
+\end{itemize}
+
+El individuo debe elegir entre los diferentes niveles/alternativas de $x$, la que se acerca más a su preferencia. Suponemos que $\hat{x}_{i} (t_{i})$ son todos diferentes:
+
+$$\hat{x}_1 (t_{1})< \hat{x}_2 (t_{2})< \ldots < \hat{x}_n (t_{n}) \mbox{ con } n \mbox{ impar} $$
+
+Definimos $M$ como el individuo mediano. su $\hat{x}_{m} (t_{m})$ está en el medio.
+
+El gobierno conduce una secuencia de elecciones donde  los candidatos son niveles de $X:\left\lbrace \hat{x}_{i} (t_{i}), \ldots,\hat{x}_{n} (t_{n}) \right\rbrace $. El equilibrio será $\hat{x}_{m} (t_{m})$ (el nivel de bien público deseado por el votante mediano):
+
+\begin{itemize}
+ \item Si se vota $\hat{x}_{m} (t_{m})$ vs. $\hat{x}_{i} (t_{i})$, con $\hat{x}_{m} (t_{m}) < \hat{x}_{i} (t_{i})$, las $j\geqM$ votarían por $\hat{x}_{m} (t_{m})$, sumando la mitad mas uno de votos (mayoría).
+ \item Si se vota $\hat{x}_{m} (t_{m})$ vs. $\hat{x}_{i} (t_i)$, con $\hat{x}_m (t_m) > \hat{x}_i (t_i)$, las $j\leqM$ votarían por $\hat{x}_m (t_m)$, sumando la mitad mas uno de votos (mayoría).
+\end{itemize}
+
+\paragraph{Ventajas}
+
+\begin{itemize}
+ \item Es relativamente simple y comprensible.
+ \item No existen demasiados incentivos para no revelar las verdaderas preferencias. Solo es posible el voto estratégico cuando se vota simultaneamente dos o más niveles de gasto público.
+\end{itemize}
+
+\paragraph{Desventajas}
+
+\begin{itemize}
+ \item No se cumple el principio del beneficio, salvo para el indiviudo mediano:
+$$t_{m}= V'_{m} (\hat{x}_{m}) \qquad \mbox{pero   } \forall i \neq m \qquad  V'_{i}(\hat{x})  \neq t_{i} $$
+ \item La solución general no es pareto óptima. En la suma:
+
+$$ V'_1(\hat{x})+\ldots+V'_{m-1}(\hat{x})+V'_m(\hat{x})+V'_{m+1}(\hat{x})+\ldots+V'_n(\hat{x})$$
+
+Los primeros $m-1$ números son menores que $t_i$:
+
+$$M=V'_m(\hat{x})$$
+
+Los últimos $m+1$ números son mayhores que $t_i$
+
+Pero no sabemos si $\sum_{i=1}^{n}t_i=1$. Por lo tanto:
+$$ \sum_{i=1}^{n}V'_i(\hat{x}) > < = 1 => \mbox{ en general } \hat{x} \mbox{ no es pareto óptimo}$$
+\end{itemize}
+\subsection{Esquemas de Revelación de Demanda}
+
+Estos esquemas buscan proveer cantidades óptimas de bienes públicos e inducir a los individuos a revelar sus verdaderas preferencias.
+
+\subsubsection{Esquema de Clark-Groves}
+Cada agente envía un ''mensaje`` al gobierno sobre sus preferencias respecto al bien público en cuestión. En particular, asumimos que el gobierno les pide a los individuos que envíen su función de utilidad $V_i$ (que puede ser o no verdadera).
+
+Por lo tanto, tienen que diseñar un sistema impositivo que induzca a los individuos a no mentir.
+
+El esquema funciona de la siguiente manera:
+\begin{itemize}
+ \item Al recibir el gobierno los $V_i$, calcula $V'_i$ y utiliza la condición de Samuelson para determinar el nivel de bien público.
+
+$$ \sum_{i=1}^{n}V'_i (x)=1  \Longrightarrow \hat{x}$$
+
+Es equivalente a la maximización del beneficio agregado neto del bien público. Si los $V_i$ son ciertas, $\hat{x}$ es pareto óptimo.
+ \item El gobierno fija los impuestos de acuerdo a la siguiente regla:
+$$T_i=\hat{x}-\sum_{j \neq i} V_j (\hat{x})$$
+
+El impuesto no depende de las preferencias de $i$, sino de la utilidad agregada del resto de los consumidores.
+\end{itemize}
+
+\paragraph{Ejemplo}
+$$ \hat{x}=1000 \; , \; n=5$$
+
+Mensajes:
+
+$$ V_1(\hat{x})=0, \; V_2(\hat{x})=500, \;V_3(\hat{x})=100, \;V_4(\hat{x})=200, \;V_5(\hat{x})=300 $$
+
+Impuestos:
+
+$$ T_1 =-100, \; T_2 =400, \; T_3 =0, \; T_4 =100, \; T_5 =200 $$
+
+Observaciones:
+
+\begin{itemize}
+ \item Pueden existir subsidios
+ \item $\sum_{i=1}^{n}T_i=600 < 1000$. El costo de producción puede ser mayor al monto recaudado (deficit).
+\end{itemize}
+
+Si $i$ enviara una demanda menor a la real, igualmente pagaría el mismo impuesto.
+El individuo querría maximiar su utilidad real:
+$$U_i=V_i(\hat{x})+y_i \mbox{ sujeto a } y_i+T_i=w_i$$
+o, lo que es lo mismo:
+
+$$ \mbox{Max }V_i(\hat{x}-T_i+w_i$$
+
+\begin{itemize}
+ \item $w_i$ no es relevante para la maximiazación.
+ \item $\hat{x}, T_i$ vienen dados para el individuo.
+\end{itemize}
+Por lo tanto  lo único que puede hacer el consumidor es mentir en du revelación de $V_i$.
+
+El individuo conoce la regla impositiva, entonces querrá maximizar:
+
+$$V_i(\hat{x})-\left[ \hat{x} - \sum_{j \neq i} V_j (\hat{x}) \right] $$
+
+¿Estará mejor el individuo falseando sus preferencias?
+
+Si revela correctamente $V_i$, el gobierno eligirá $\hat{x}$ para maximizar:
+
+\begin{eqnarray}
+\sum_{i=1}^{n} V_i(x)-x &=& V_i(x)+\sum_{j \neq i} V_j(x) - x \\
+&=& V_i(x) - \left[ x- \sum_{j \neq} V_j (x)  \right]
+\end{eqnarray} 
+
+Diciendo la verdad logra que el gobierno maximice exactamente lo que él pretende maximiazar, y por lo tanto no hay ganancias en mentir. Esto es cierto sin importar lo que haga el resto de los individuos. si $V_j$ es cierto o no es irrelevante para el argumento. \emph{Decir la verdad es una estrategia dominante para $i$.}
+
+Por lo tanto  este esquema soluciona el problema de incentivos, y logra una provisión Pareto óptima del bien público.
+
+\paragraph{Ventajas}
+
+\begin{enumerate}
+ \item Resuelve el problema de revelación de demanda.
+ \item Genera un resultado Pareto óptimo.
+\end{enumerate}
+
+\paragraph{Desventajas}
+\begin{enumerate}
+ \item Podrían existir déficits.
+
+Solución: Los incentivos de $i$ no cambian si sumamos a $T_i$ algo que no dependa de $V_i$ ni de $\hat{x}$.
+$$S_i= \max_x \sum_{j\neq i} \left[ V_j(x)-\frac{x}{n}\right]$$
+Representa el nivel de $x$ que maximiza el BAN sin tneer en cuenta a $i$, que es un individuo pasivo que paga $\frac{x}{n}$.
+Redefinimos $T_i$:
+$$T_i &=& \hat{x}-\sum_{j \neq i} \left[ V_j (\hat{x})+S_i\right] $$
+Utilizando:
+$$\hat{x}=\frac{\hat{x}}{n}+\frac{(n-1)}{n}\hat{x}=\frac{\hat{x}}{n}+\sum_{j\neqi}\frac{\hat{x}}{n}$$
+
+obtenemos:
+
+$$T_i= \frac{\hat{x}}{n}+S_i-\sum_{J=i} \left[ V_J(\hat{x}-\frac{\hat{x}}{n} \right]$$
+
+Como 
+
+$$S_i=\max_x \sum{j\neqi}\left[V_j(\hat{x})-\frac{\hat{x}}{n}\right] \geq \sum_{j\neqi}\left[V_j(\hat{x})-\frac{\hat{x}}{n}\right]$$
+entonces
+$$T_i \geq \frac{\hat{x}}{n} \longrightarrow \sum_{i=1}^{n}T_i \geq \hat{x} \Longrightarrow \mbox{   Se resuelve el problema de los déficits}$$
+Podemos interpretar el nuevo $T_i$ como la suma de:
+\begin{itemize}
+\item $\frac{1}{n}$ del costo de $x$
+\item la diferencia entre el beneficio agregado neto del reto de los individuos cuanod $i$ es pasivo, y el beneficio agregado neto del resto cuando $i$ revela su demanda.
+
+Esta diferencia puede verse como la perdida que impone $i$ sobre el resto de los consumidores al expresar su demanda por el bien público (algo similar al impuesto pigouviano)
+\end{itemize}
+
+\item El esquema presenta la posibilidad de que exista superavit público.
+Si el gobierno devuelve el superavit, $i$ sabe que va a obtener $F(i,\hat{x},V_1,\ldots, V_n)$
+
+El impuesto correcto debería ser $T_i-F(.)$ en lugar de $T_i$.
+Pero como $F(.)$ depende de $V_i$ y de $\hat{x}$, aparece nuevamente el problema de incentivos.
+
+Por otra parte, si el gobierno no devuelve el superavit, se presenta una paradoja:
+
+$$\hat{x}+\sum{y_i}\leq\sum_{i=1}^{n}w_i$$
+Algunos bienes reales estaràn desapareciendo del sistema.  Se está desperdiciando riqueza real. Entonces $(\hat{x},y_1,\ldots,y_n)$ no puede ser un optimo de pareto, aun cuando $\hat{x}$ satisfaga la condición de Samuelson, ya que hay recursos ociosos.
+No existe una función $S_i$ tal que cuando fijamos $T_i=\hat{x}-\sum_{j\neqi}V_j(\hat{x})+S_i$ el sistema satisfaga simultaneamente las tres propiedades siguientes:
+\begin{itemize}
+\item Decir la verdad sea la estrategia dominante
+\item $\hat{x}$ satisface la condición de Samuelson
+\item $\sum_{i=1}^{n}=\hat{x}$
+\end{itemize}
+\end{enumerate}
+
+\paragraph{Conclusión}
+Este mecanismo es un sistema impositivo con las siguientes propiedades:
+\begin{enumerate}
+\item La honestidad es una estrategia estrictamente dominante.
+\item Se implementa $\hat{x}$ óptimo de Pareto.
+\item La recaudación es suficiente para financiar $\hat{x}$.
+\item Existen probabilidades de superavit, pero no hay forma de que el gobierno lo devuelva sin generar posibles incentivos para mentir. Si se mantiene 1, se quiebra 2, y a la inversa.
+\end{enumerate}
+
+\subsubsection{Bienes Públicos Locales y Teoría de los Clubes}
+El concepto de \emph{bienes públicos locales} fue introducido en la teoría económica por Charles Tiebout, en su trabajo \cite{Tiebout_1956}. Hasta la aparición de este trabajo, los bienes públicos era concebidos como bienes que si se encontraban disponibles para una persona, podían ser consumidos por toda la comunidad/economía. Básicamente, se sustentaba en los principios de ``no rivalidad''y ``no exclusión'' citados anteriormente.
+
+La imposibilidad de excluir a personas del consumo era la característica más importante, provocando que no sea posible encontrar un mecanismo descentralizado de provisión eficiente, debido a la imposibilidad de encontrar un sistema que llevara a los individuos a revelar su verdadera valoración por este tipo de bienes. Este es el problema de los bienes públicos a los que Samuelson intentó encontrar solución en su trabajo \cite{Samuelson_1955}
+
+El trabajo de Samuelson llevó a Tiebout a esbozar una respuesta. Argumentaba que existía una clase de bienes públicos, los bienes públicos locales, para los cuales un mecanismo descentralizado para alcanzar su provisión óptima existía. En su artículo se concentraba en que varios bienes públicos están sujetos a congestión. Enfatizaba que era el caso de los bienes públicos provistos por los gobiernos locales -un plaza, un calle, una escuela-. Están disponibles para todos los miembros de la comunidad local, pero para un determinado nivel de infraestructura, cuanto mayor sea la cantidad de gente que utilice estos servicios, menor será la disponibilidad para el resto. Utilizando la terminología tradicional, lo bienes públicos locales presentan la característica de "no exclusión" , pero no la de ``no rivalidad''. Son parcialmente rivales, o parcialmente ``no rivales''
+
+En el modelo de Tiebout, cada comunidad o gobierno local provee un mix de bienes públicos. Aquellos que viven en la jurisdicción reciben los beneficios de esos bienes y los financian a través de un impuesto, igual para cada habitantes de la localidad. No existen relación o interacción entre las jurisdicciones.
+
+La clave del mecanismo de Tiebout es la movilidad de la gente. Si los ciudadanos pueden, sin costo, mudarse de una localidad a otra, ellos se mudaran donde el mix entre servicios e impuestos les genere el mayor beneficio. Cualquier otro incentivo a mudarse, como por ejemplo, la disponibilidad de empleo, es ignorada.
+
+Aquellos que deseen mejores escuelas y puedan pagar impuestos mayores para financiarlas, estarán en una localidad. Aquellos que prefieran pagar menos y tener escuelas de menor niveles, se juntarán en otra localidad. Los impuestos de pagan de acuerdo a los beneficios que reciben. Con suficiente variedad en la oferta de las diferentes localidades, cada una estará compuesta por gente de características similares.
+
+Debido a la congestión, habrá un punto optimo en el tamaño de cada comunidad. El tamaño se determinará donde los beneficios de compartir los costos de infraestructura con otros contribuyentes sea igual al costo de congestión generado por un nuevo miembro en la comunidad. En el caso de que existan personas con un determinado set de preferencias que podrían encajar en una comunidad que ya encontró su tamaño óptimo, entonces se generá una nueva comunidad, idéntica a la anterior.
+
+Dentro de cada jurisdicción, los residentes pagan idénticos impuestos, consumen la misma cantidad de bienes públicos, y acuerdan en cuanto al tamaño de la comunidad. El problema de alcanzar un mecanismo eficiente de provisión de bienes públicos parece haberse solucionado, al menos, en el ámbito de los bienes públicos locales.
+En palabras de Tiebout, ``La movilidad espacial provee la contraparte de los bienes publicos locales al viaje de compras privado''.
+
+La teoría de los clubes surge para llenar la brecha e/ bienes privados puros y bienes publicos puros. Incluye como una variable a ser determinada la extensión de los derechos de propiedad-consumo sobre diferentes números de personas. De esta manera pueden considerarse bienes públicos impuros, como biens públicos sujetos a congestión.
+
+La pregunta central en la teoría de los clubes es determinar el tamaño de los arreglos deseables de costos y consumos.
+
+\subparagraph{Definición:} Un club es un grupo voluntario de individuos que obtienen benficios mutuos de compartir costes de producción y/o coaracterísticas de los miembors y/o un bien caracterizado por beneficios exclusivos.
+Las características particularsa de un club, que lo diferencias de un bien público puro, son:
+
+\begin{enumerate}
+	 \item Voluntarismo: Los individuos permanecen y apelan en el club de forma voluntaria, los miemboras llegan a permancer porque anticipan un beneficipo neto de ello. En el caso de un bien público puro, el voluntarismo podría estar ausente, ya que el bien podríua perjudicar a alguno de sus receptores (defensa a un pacifista, penalización a a alguien que se opone a su uso) y los costos de salir podrían ser prohibitivamente altos.
+	 \item La congestión lleva a un número finito de miembros a la utilización del bien por parte de un miembro disminuye los beneficios o la calidad del servicio que aun está disponible para los otros usuarios. La congestión es el costo de aumentar el numero de miembros.
+	En el caso de un bien público puro, los costos de congestión son nulos y por lo tanto, lo óptimo es incluir a toda la población de la jurisdicción cuyo beneficio marginal del bien público es positivo (suponiendo que no hay derrames a otras jurisdicciones; si los hubiera, lo óptimo sería incluir a todos los receptores del beneficio).
+	 \item Disposición de los no miembros: un modelo de equilibrio general debería indagar qué pasa con los que están fuera del club. En el caso de los bienes publicos puros, todos los individuos pueden ser miembros sin que haya congestión, de manera que los no miembros no existen. Toda la población está asociada a uno solo provision del bien publico. Pero los clubes de biene, los no miembros de un determinado club tienen dos opciones: puede formar otro cluib que probea el mismo bien o no hacerlo. Si toda la población se asigna en un conjunto de clubes que no se superponen, la población se particiona en un conjunto de clubes. Entonces el numero de clubes se vuelve una variable de elección relevante.
+	\item Presencia de un mecanismo de exlusión, donde las tassa de utilización de los usuarios puedan ser monitoreadas y los no miembros o los que no paguen puedan ser excluidos. Sin este mecanismo no habría incentivos a ser miembro o  a pagar. La operación y provisión del mecanimos de exclusión debe hacerse a un costo razonable, menor que los beneficios de asignar el bien dentro del club. Para un bien público puro, la formación y mantenimiento de un mecanismo de exclusión podría ser demasiado costosa, ya que los costos usualmente exceden las ganancias de eficiencia de la exclusión, entocnes, es mejor permitir que los bieneficios del buen publico no sean excluibles.
+	 \item Decisión Dual: como hay exclusión, los miembors con privilegios de uso deben distinguirse de los no miembros. Además, debe determinarse la cantidad provista del bien. Como la decisión de los miembros afecta la decisión de provisión de viceversa, ninguno de ellos puede determinarse en forma independiente. En el caso de los bienes publicos, sólo debe considerarse la decisión de provisón, ya que los miembros son toda la población.
+	 \item Optimalidad: La provisión voluntaria de un bien público puro está tipicamente asociada con un equilobrio de nash que es subóptimo, por lo cual se requieree provisión gubernamental. En el caso de los clubes de bienes, bajo una amplia variedad de circunstancias, se pueden alcanzar resultadosóptimos sin recurrir a la provisión pública.
+\end{enumerate}
+
+El propósito de \cite{Cornes_Sandler_1986} es presentar un modelo de clubes homogéneos donde las decisiones de provisión y miembros se deben resolver 
+Un club homogeneo incluye miembros cuyos gustos y dotaciones son identicas. Esto hace posible que todo el análisis pueda hacerse en términos de un miembro representativo.
+Supongamos que:
+\begin{itemize}
+	 \item Existen dos bienes: 
+	 \begin{itemize}
+	 	\item Un bien privado ($y$) 
+	 	\item Un bien club ($x$)
+	 \end{itemize}
+	 \item los miembros del club son homogéneos (poseen los mismos gustos y dotaciones) y las preferencias del miebmro respresentativo son: 
+	
+	 $$ U^i=U^i(y^i, x,s)$$
+
+	 donde: 
+		\begin{itemize}
+			\item $y^i$ es el consumo del bien privado del miembro $i$
+			\item $x$ es el consumo del bien club del miebmro $i$
+			\item $s$ es el tamaño del club (número de miembros).
+		\end{itemize}
+	 \item el club tiene utilizción fija (todos los miembros utilizan la oferta total del bien compartido). La tasa de utilizacion del bien club es:
+	$$x^i= x \: \forall \mbox{ donde } x \mbox{ es la oferta disponible del bien club}$$
+	 \item la función de utilidad satisface:
+		\begin{enumerate}
+			\item característica de no saciedad: $U_x^i>0, U_y^i>0$
+			\item cuasi-concavidad: curvas de indiferencia convexas al origen en el espacio de bienes.
+			\item dos veces diferenciable en todas los argumentos (implicitamente se asume que $s$ es continua).
+			\item $u^i_s>0$ en un primer tramo, debido al efecto camadarería, peor a partir  de algún punto ocurre la congestión, $u_s^i<0$ para $s<\overline{s}$, donde $overline{s}$ es la cantidad de miembros apartir de la cual comienza la congestión.
+		\end{enumerate}
+	 \item Existe un mecanismo de exclusión disponible a un costo nulo.  La existencia de este mecanismo y de la congestion implica que el bien club no es un bien público puro en el sentido de Samuelson, aun cuando la provisión del club sea consumida igualmente por todos los miembros.
+	 \item Cada miembro intenta maximizar su función de utilidad sujeto a la restricción de recursos:
+	
+		$$ F^i (y^i, x, s)=0$$
+
+		con:
+
+		$$ \dfrac{F^i}{y^i}>0;\dfrac{F^i}{x}>0;\dfrac{F^i}{s}>0$$
+\end{itemize}
+
+El individuo representativo:
+$max U^i=U^i(y^i, X,s) \mbox{ s/a }F^i(y $

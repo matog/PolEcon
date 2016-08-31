@@ -1,0 +1,305 @@
+\section{Externalidades}
+
+\subparagraph{Bibliografía:} \cite{binhoff} 
+	
+\emph{Definición:} Existe una externalidad cuando el bienestar de
+un consumidor o las posibilidades de producción de una firma está
+directamente afectadas por las acciones de otro agente en la
+economía.
+
+\subsection{Externalidades en la producción}
+
+En esta sección se sigue el desarrollo de \citet{binhoff}.
+
+Supuestos:
+
+\begin{itemize}
+ \item 2 firmas, $x$ e $y$ producen 2 bienes.
+ \item Un factor de producción L
+ \item La firma $x$ es la que genera la externalidad
+ (contaminación):
+$$\frac{\partial y}{\partial x}<0$$
+ \item Funciones de producción
+    \begin{eqnarray*}
+        y&=&y(L_{y},x) \\
+        x&=&x(L_{x})
+    \end{eqnarray*}
+\end{itemize}
+
+Un razonamiento \emph{naif} sería plantear producción cero para
+lograr contaminación cero. Pero, como vamos a demostrar \emph{la
+asignación eficiente no implica contaminación cero}
+
+Supongamos que $x$ e $y$ se fusionan, y son manejadas por un \textit{manager}.
+Por lo tanto, se va a tener en cuenta que el aumento de la
+producción de $x$ implica la caída de $y$. Cuando se tiene en cuenta este punto, \emph{se internaliza la
+externalidad.}
+
+$$ Max \: \pi = P_x \, x(L_x)+P_y \, y(L_y,x(L_x))-w(L_x+L_y)$$
+
+con $P_x, P_y$ y $w$ dados.\\
+
+
+\emph{Condiciones de Primer Orden:}
+\begin{eqnarray*}
+	\frac{\partial \pi}{\partial L_x} &:& P_x.MPL_x+P_y \frac{\partial
+	y}{\partial x}MPL_x-w=0 \\
+	\frac{\partial \pi}{\partial L_y}&:& P_y.MPL_y-w=0
+\end{eqnarray*}
+
+Entonces:
+
+\begin{eqnarray}
+ w &=& P_x .MPL_x + P_y.MPL_y \frac{\partial y}{\partial x}-w=0 \label{px1}\\
+ w &=& P_y.MPL_y \label{py1}
+\end{eqnarray}
+
+Las 2 firmas fusionadas eligen $L$ tal que:
+\begin{itemize}
+ \item en $y$, $w=PML_y$
+ \item en $x$, $w=PML_x+\mbox{Daño marginal en }y$
+\end{itemize}
+
+Despejando los precios de los 2 bienes de las ecuaciones (\ref{py1}) y (\ref{px1}):
+
+\begin{eqnarray}
+ P_x &=& \frac{w}{PML_x}-P_y \frac{\partial y}{\partial x} \n\\
+ P_y &=& \frac{w}{MPL_y} \label{optimo}
+\end{eqnarray}
+
+La tasa marginal de sustitución sería:
+
+$$\frac{P_x}{P_y}=\frac{\frac{w}{PML_x}-P_y \frac{\partial
+y}{\partial x}}{\frac{w}{MPL_y}}$$
+
+El precio relativo es mayor que el obtenido en el la situación en que la externalidad no se internaliza.
+Si las firmas no se fusionan, $P_x$ no reflejaría la externalidad que genera $x$ sobre $y$.
+
+Si no existen externalidades, la $FPP$ se mueve hacia adentro (Figura \ref{fig:grafico1}).
+
+
+\begin{figure}
+	\centering
+	\caption{$FPP$ con Externalidades}
+	%\input{grafico1.tex} 
+	\label{fig:grafico1}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\caption{Ganancias en el Bienestar}
+	%\input{grafico2.tex}
+	\label{fig:grafico2}
+\end{figure}
+
+Si la externalidad no es internalizada, la maximización del consumidor lo situaría en un punto como $A$, pero allí $TMS \neq TMT$. Por lo tanto, el individuo se está perdiendo de aumentar su bienestar (área sombreada). Al internalizarla, se situa en el punto $B$, donde aumenta la relación de precios relativos $\frac{P_x}{P_y}$. Es un último en el sentido de Pareto.
+
+La Figura \ref{fig:grafico3} muestra, de manera grafica, un mercado con una externalidad negativa, en el esquema de un modelo de Equilibrio Parcial.
+
+\begin {figure}
+\caption{Equilibrio Parcial}
+	\centering
+	%\input{grafico3.tex} 
+	\label{fig:grafico3}
+\end{figure}
+
+El equilibrio social es $(P^*_x, x^*)$ y el privado $(\overline{P^*_x}, \overline{x^*})$. El equilibrio competitivo genera una producción menor a la socialmente óptima.
+
+
+\subsection {Externalidades en el Consumo}
+
+\begin{itemize}
+ \item Un consumidor
+ \item Dos bienes, $x$ e $y$
+ \item Un factor: $L$
+ \item $x$ produce humo ($s$), es el que genera la externalidad.
+\end{itemize}
+
+\begin{eqnarray*}
+ U &=& U(x,y;s) \\
+ x &=& x(L_x) \\
+ y &=& y(L_y) \\
+ s &=& s(x) \; \mbox{con} \; \frac{\partial s}{\partial x}>0 \\
+ L_x+L_y &=& \overline{L}
+\end{eqnarray*}
+
+Con $U_x>0; U_y>0; U_s<0$\\
+
+El problema que resuelve la empresa fusionada es:
+
+$$Max \; U(x(L_x);y(\overline{L}-L_x);s(x(L_x)))$$
+
+\emph{Condiciones de Primer Orden:}:
+
+$$\frac{\partial U}{\partial{L_x}}=U_x \frac{\partial
+x}{\partial{L_x}}-U_y\frac{\partial y}{\partial{L_y}}+U_s
+\frac{\partial s}{\partial{x}} \frac{\partial x}{\partial{L}} $$
+
+Reordenando:
+
+$$ MPL_x(U_x+U_s \frac{\partial s}{\partial{x}})=MPL_y.U_y$$
+
+Entonces:
+
+\begin{eqnarray*}
+	TMT_{yx} &=& \frac{MPL_y}{MPL_x} = \frac{U_x+U_s.\frac{\partial
+s}{\partial x}{U_y}}{U_y} \\
+	TMT_{yx} &=& MRS_{yx}+MRS_{ys}.\frac{\partial
+ s}{\partial{x}}=MPL_y.U_y \\
+	TMT_{yx} &=& \frac{U_x}{U_y}+\frac{U_s}{U_y}\frac{\partial s}{\partial y}
+\end{eqnarray*}
+
+donde $\frac{U_s}{U_y}\frac{\partial s}{\partial y}$ es el daño
+marginal. \\
+
+Por lo tanto:
+
+$$TMT_{yx} = MRS_{yx}+MRS_{ys}.\frac{\partial
+ s}{\partial{x}}=MPL_y.U_y$$
+
+Entonces:
+\begin{eqnarray}
+	MRS_{xy}&>&TMT{xy} \label{eqgrafico1}\\
+	\frac{P_x}{P_y}&=&MRS_{xy}=TMT_{xy}-MRS_{ys}\frac{\partial
+s}{\partial{x}} \n
+\end{eqnarray}
+
+La ecuación \ref{eqgrafico1} representa el punto $A$ en la Figura \ref{fig:grafico1}
+
+El precio relativo de $x$ va a ser mas alto que cuando no se
+internaliza la externalidad.
+
+\subsection{Mecanismos para solucionar las fallas de mercado}
+
+\subsubsection{Impuesto Pigouviano}
+Una de las posibles soluciones a los problemas generados por la externalidad
+sería establecer un impuesto de monto similar al daño marginal que produce la
+externalidad en el nivel último de producción o consumo. \\
+En el caso de una externalidad en la producción, el impuesto último
+sería:
+
+$$t_x=-P_y\frac{\partial y}{\partial x}(x^*)$$
+
+\paragraph{Demostración}
+
+La firma $x$:
+
+$$ Max \; \pi = P_x.x-c(x)-t_x.x$$
+
+\emph{Condiciones de Primer Orden:}:
+
+\begin{eqnarray}
+ P_x-c'(x)-t_x &=& 0 \n \\
+ P_x &=&c'(x)+t_x \n \\
+ P_x &=&c'(x)-P_y \frac{\partial y}{\partial x}(x^*) \label{optimo2}
+\end{eqnarray}
+$P_x$ es igual al que obtuvimos en \ref{optimo}, cuando ambas firmas
+se fusionaban.\\
+
+\emph{Crítica:} Es necesario contar con información ex-ante sobre
+cual es la magnitud del daño marginal social.
+
+\subsubsection{Negociación}
+Esta solución, desarrollada por \citet{coase}, critica el enfoque de
+Pigou. Coase establece que si se cumplen ciertas condiciones no es
+necesario una intervención en el mercado. Requiere que los derechos
+de propiedad están establecidos de manera clara. Independientemente
+de quien posea la propiedad, se arribará al mismo resultado eficiente.
+
+\begin{enumerate}
+\item $y$ posee los derechos a estar libre de contaminación
+\label{casoi}
+
+Si $x$ le paga a $y$, para que este le permita contaminar y
+producir, se genera un \emph{mercado auxiliar} de derechos de
+propiedad.
+
+$$Max \; \pi_y=P_y. y(L_y,x)-wL_y+tx$$
+
+$t$ es el precio que se fija para la contaminación por unidad de
+producción.
+
+Derivando con respecto a los argumentos $x$ y ·$L_y$:
+
+\begin{eqnarray}
+\frac{\partial \pi_y}{\partial x} &=& P_y \frac{\partial y}{\partial
+x}+t=0 \n \\
+t & = & -P_y \frac{\partial y}{\partial x} \label{tx1}
+\end{eqnarray}
+
+$$\frac{\partial\pi_y}{\partial L_y}=P_y\frac{\partial y}{\partial
+L}-w=0$$
+
+La empresa $x$ resuelve:
+
+$$Max \; \pi_x=P_x. x(L_x)-wL_x-tx$$
+
+\emph{Condiciones de Primer Orden:}:
+
+\begin{eqnarray}
+\frac{\partial \pi_x}{\partial L_x} &=& (P_x-t) \frac{\partial
+x}{\partial L_x}+w=0 \n \\
+t & = & -P_x - \frac{w}{MPL_x} \label{tx2}
+\end{eqnarray}
+
+
+Igualando (\ref{tx1}) y (\ref{tx2}), el precio de equilibrio que se obtiene es:
+
+\begin{eqnarray}
+t & = & -P_y \frac{\partial y}{\partial x} = -P_x -
+\frac{w}{MPL_x}  \n \\
+P_x&=&\frac{w}{MPL_x}-P_y \frac{\partial y}{\partial x}
+\end{eqnarray}
+
+Es idéntico al caso en que las firmas se fusionan.
+
+\item $x$ el tiene derecho a contaminar.
+
+$y$ debe pagarle a $x$ para tener derecho al aire libre. Suma $b$
+por unidad de producción que $x$ disminuye su producción, a partir
+de \~{a}
+
+$$Max \; \pi_y=P_y. y(L_y,x)-wL_y-b(x-x)$$
+
+\emph{Condiciones de Primer Orden:}:
+
+\begin{eqnarray}
+\frac{\partial \pi_y}{\partial x} &=& P_y \frac{\partial y}{\partial
+x}+b=0 \n \\
+b & = & -P_y \frac{\partial y}{\partial x} \label{b1}
+\end{eqnarray}
+
+$$\frac{\partial\pi_x}{\partial L_y}=P_y\frac{\partial y}{\partial
+L}-w=0$$
+
+La empresa $x$:
+
+$$Max \; \pi_x=P_x.x(L_x)-wL_x+b(x-x(L_x))$$
+
+\emph{Condiciones de Primer Orden:}:
+
+\begin{eqnarray}
+\frac{\partial \pi_x}{\partial L_x} &=& (P_x-b) \frac{\partial
+x}{\partial L}-w=0 \n \\
+b & = & P_x- \frac{w}{MPL_x} \label{b2}
+\end{eqnarray}
+
+Igualando (\ref{b1}) y (\ref{b2}):
+
+\begin{eqnarray}
+P_x- \frac{w}{MPL_x} &=& -P_y \frac{\partial y}{\partial x} \n \\
+P_x &=& \frac{w}{MPL_x}-P_y \frac{\partial y}{\partial x}
+\end{eqnarray}
+
+El $P_x$ es igual al resultante al Caso 1 y al que las firmas se
+fusionan.
+
+\emph{Conclusión:} \marginpar{\emph{Teorema de Coase}} El Teorema de Coase establece que si existen
+derechos de propiedad bien establecidos, que se puedan hacer cumplir
+por leyes, y los costos de transacción son cero, la asignación
+resultante va a ser pareto última, sin importar quien posee los
+derechos de propiedad.
+\end{enumerate}
+
+La diferencia entre los Casos 1 y 2 es que en cada situación,
+existirá una distribución del ingreso diferente.
