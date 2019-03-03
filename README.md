@@ -6,7 +6,7 @@ Las notas están focalizadas en los contenidos del primer semestre del programa.
 La carpeta 'programa' incluye el programa de estudio.
 #### INDICE
 1.  Externalidades
-  1. Externalidades en la producción
+⋅⋅Externalidades en la producción
   2. Externalidades en el Consumo
   3. Mecanismos para solucionar las fallas de mercado
     1. Impuesto Pigouviano
