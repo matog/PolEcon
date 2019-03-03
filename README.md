@@ -6,11 +6,11 @@ Las notas están focalizadas en los contenidos del primer semestre del programa.
 La carpeta 'programa' incluye el programa de estudio.
 #### INDICE
 1.  Externalidades
-  +Externalidades en la producción
-  +Externalidades en el Consumo
-  +Mecanismos para solucionar las fallas de mercado
-  +Impuesto Pigouviano
-  +Negociación
+  + Externalidades en la producción
+  + Externalidades en el Consumo
+  + Mecanismos para solucionar las fallas de mercado
+  + Impuesto Pigouviano
+  + Negociación
 2. Bienes Públicos
   1. Provisión óptima de un bien público
   2. Provisión voluntaria de bienes publico
